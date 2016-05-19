@@ -700,6 +700,10 @@ public class ManageApplications extends InstrumentedFragment
             }
         }
         return false;
+}
+    @Override
+    public void onResetCompleted() {
+        mApplications.mExtraInfoBridge.onPackageListChanged();
     }
 
     @Override
