@@ -14,6 +14,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- General strings -->
+    <string name="header_category_custom">Viper Additions</string>
+    <string name="venom_title">Venom</string>
+    <string name="venom_title_summary">Various additions</string>
+    <string name="substratum_title">Substratum</string>
+    <string name="substratum_summary">Customize device theme</string>
+
     <!-- About phone screen, ViperOs version -->
     <string name="viper_version_title">ViperOS Version</string>
     <string name="viper_version_default">Unknown</string>

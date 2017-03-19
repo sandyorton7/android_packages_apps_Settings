@@ -130,12 +130,20 @@
 
         <activity android:name=".Settings$WirelessSettings"
             android:label="@string/header_category_wireless_networks">
-            <intent-filter android:priority="4">
+            <intent-filter android:priority="5">
                 <action android:name="com.android.settings.category.wireless" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
+        <activity android:name="Settings$CustomSettings"
+            android:label="@string/header_category_custom">
+            <intent-filter android:priority="4">
+                <action android:name="com.android.settings.category.custom" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		
         <activity android:name=".Settings$DeviceSettings"
             android:label="@string/header_category_device">
             <intent-filter android:priority="3">
@@ -2828,6 +2836,56 @@
                 android:value="true" />
         </activity>
 
+        <activity android:name="Settings$VenomSettingsActivity"
+            android:label="@string/venom_title"
+            android:icon="@drawable/ic_settings_venom"
+            android:taskAffinity="">
+            <intent-filter android:priority="1">
+                <action android:name="com.viper.venom.Venom" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="9">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.custom" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.viper.venom.Venom" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/venom_title_summary" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+
+        <activity android:name="Settings$SubstratumActivity"
+            android:label="@string/substratum_title"
+            android:icon="@drawable/ic_settings_substratum"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="3">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.custom" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.Substratum" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/substratum_summary" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+		
         <activity android:name=".applications.LockPatternActivity"
                   android:label="@string/protected_apps"
                   android:excludeFromRecents="true">
