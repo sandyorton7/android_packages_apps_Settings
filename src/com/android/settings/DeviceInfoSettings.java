@@ -80,7 +80,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_QGP_VERSION = "persist.qgp.version";
     private static final String MBN_VERSION_PATH = "/persist/speccfg/mbnversion";
     private static final String QGP_VERSION_PATH = "/persist/speccfg/qgpversion";
-    private static final String KEY_MOD_VERSION = "mod_version";
+    private static final String KEY_VIPER_VERSION = "viper_version";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_MOD_API_LEVEL = "mod_api_level";
 
@@ -146,9 +146,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         if(mMbnVersion == null){
             getPreferenceScreen().removePreference(findPreference(KEY_MBN_VERSION));
         }
-        findPreference(KEY_MOD_VERSION).setSummary(
-                cyanogenmod.os.Build.CYANOGENMOD_DISPLAY_VERSION);
-        findPreference(KEY_MOD_VERSION).setEnabled(true);
+        setValueSummary(KEY_VIPER_VERSION), "ro.viper.version");
+        findPreference(KEY_VIPER_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         setExplicitValueSummary(KEY_MOD_API_LEVEL, constructApiLevelString());
         findPreference(KEY_MOD_API_LEVEL).setEnabled(true);
@@ -248,7 +247,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference.getKey().equals(KEY_FIRMWARE_VERSION)
-                || preference.getKey().equals(KEY_MOD_VERSION)) {
+                || preference.getKey().equals(KEY_VIPER_VERSION)) {
             System.arraycopy(mHits, 1, mHits, 0, mHits.length-1);
             mHits[mHits.length-1] = SystemClock.uptimeMillis();
             if (mHits[0] >= (SystemClock.uptimeMillis()-500)) {
@@ -262,7 +261,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 }
 
                 Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.putExtra("is_lineage", preference.getKey().equals(KEY_MOD_VERSION));
+                intent.putExtra("is_viper", preference.getKey().equals(KEY_VIPER_VERSION));
                 intent.setClassName("android",
                         com.android.internal.app.PlatLogoActivity.class.getName());
                 try {
