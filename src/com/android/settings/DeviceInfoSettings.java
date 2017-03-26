@@ -146,7 +146,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         if(mMbnVersion == null){
             getPreferenceScreen().removePreference(findPreference(KEY_MBN_VERSION));
         }
-        setValueSummary(KEY_VIPER_VERSION), "ro.viper.version");
+        setValueSummary(KEY_VIPER_VERSION, "ro.viper.version");
         findPreference(KEY_VIPER_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         setExplicitValueSummary(KEY_MOD_API_LEVEL, constructApiLevelString());
