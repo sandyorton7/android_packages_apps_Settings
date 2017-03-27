@@ -85,4 +85,8 @@
     <string name="double_tap_wake_doze_title">Double-tap to wake on doze</string>
     <string name="double_tap_wake_doze_summary">Require a double-tap to wake the device on a doze pulse screen</string>
 
+    <!-- Battery Status in doze screen -->
+    <string name="ambient_display_show_battery_title">Battery Status</string>
+    <string name="ambient_display_show_battery_summary">Show battery indicator during pulse</string>
+
 </resources>
