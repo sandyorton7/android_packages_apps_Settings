@@ -18,6 +18,8 @@ package com.android.settings.overlay;
 
 import android.content.Context;
 import android.support.annotation.Keep;
+import com.android.settings.aoscp.support.SupportManagerCallback;
+import com.android.settings.aoscp.support.SupportManagerCallbackImpl;
 import com.android.settings.dashboard.SuggestionFeatureProvider;
 import com.android.settings.dashboard.SuggestionFeatureProviderImpl;
 import com.android.settings.fuelgauge.PowerUsageFeatureProvider;
@@ -31,10 +33,19 @@ public class FeatureFactoryImpl extends FeatureFactory {
 
     private SuggestionFeatureProvider mSuggestionFeatureProvider;
     private PowerUsageFeatureProvider mPowerUsageFeatureProvider;
+    private SupportManagerCallback mSupportManagerCallback;
 
     @Override
     public SupportFeatureProvider getSupportFeatureProvider(Context context) {
         return null;
+    }
+	
+	@Override
+    public SupportManagerCallback getSupportManagerCallback(Context context) {
+        if (mSupportManagerCallback == null) {
+            mSupportManagerCallback = new SupportManagerCallbackImpl();
+        }
+        return mSupportManagerCallback;
     }
 
     @Override

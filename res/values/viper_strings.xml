@@ -25,4 +25,12 @@
     <string name="viper_version_title">ViperOS Version</string>
     <string name="viper_version_default">Unknown</string>
 	
+    <!-- Support Greeting -->
+    <string name="support_welcome_title">Support for you, on the go</string>
+    <string name="support_welcome_title_summary">You can check out tips &amp; tricks, locate new features and more</string>
+    <!-- Support Report Button -->
+    <string name="support_escalation_by_report">Report</string>
+    <!-- Support Help Item -->
+    <string name="support_help_locate">Help &amp; tips</string>
+	
 </resources>
