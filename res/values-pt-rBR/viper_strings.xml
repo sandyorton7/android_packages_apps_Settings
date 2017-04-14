@@ -33,4 +33,15 @@
   <!-- Support Help Item -->
   <string name="support_help_locate">Ajuda &amp; Dicas</string>
 	
+  <!-- Software information-->
+  <string name="software_info_settings_title">Informações do software</string>
+  <!-- Social category -->
+  <string name="social_category_title">Social</string>
+  <string name="google_preference_title">ViperPlus</string>
+  <string name="google_preference_title_summary">Mantenha contato com outros usuários e desenvolvedores do ViperOS na comunidade do Google+</string>
+  <!-- Source category -->
+  <string name="source_category_title">Fonte</string>
+  <string name="github_preference_title">Github</string>
+  <string name="github_preference_title_summary">Para obter as informações mais recentes sobre o que é melhorado na ViperOS, dê uma olhada no nosso Github</string>
+	
 </resources>

@@ -78,6 +78,11 @@
                 <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO" />
         </PreferenceScreen>
 
+        <!-- Software information -->
+        <PreferenceScreen android:key="software_info"
+                android:title="@string/software_info_settings_title"
+                android:fragment="com.android.settings.viper.deviceinfo.SoftwareInfo" />
+	
         <!-- Feedback on the device -->
         <PreferenceScreen android:key="device_feedback"
                 android:title="@string/device_feedback">
