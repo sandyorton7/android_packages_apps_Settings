@@ -30,6 +30,7 @@
   <string name="support_welcome_title_summary">Você pode verificar dicas &amp; Truques, localizar novos recursos e muito mais</string>
   <!-- Support Report Button -->
   <string name="support_escalation_by_report">Relatório</string>
+  <string name="support_escalation_by_report_error">O relatório de erros não está disponível neste momento</string>
   <!-- Support Help Item -->
   <string name="support_help_locate">Ajuda &amp; Dicas</string>
 	
