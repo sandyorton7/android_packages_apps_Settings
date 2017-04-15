@@ -25,7 +25,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.UserManager;
-import android.support.annotation.VisibleForTesting;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -40,8 +39,7 @@ import com.android.settings.SettingsPreferenceFragment;
 public abstract class PowerUsageBase extends SettingsPreferenceFragment {
 
     // +1 to allow ordering for PowerUsageSummary.
-    @VisibleForTesting
-    static final int MENU_STATS_REFRESH = Menu.FIRST + 1;
+    private static final int MENU_STATS_REFRESH = Menu.FIRST + 1;
 
     protected BatteryStatsHelper mStatsHelper;
     protected UserManager mUm;

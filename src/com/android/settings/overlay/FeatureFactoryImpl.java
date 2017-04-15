@@ -20,7 +20,6 @@ import android.content.Context;
 import android.support.annotation.Keep;
 import com.android.settings.aoscp.support.SupportManagerCallback;
 import com.android.settings.aoscp.support.SupportManagerCallbackImpl;
-import com.android.settings.fuelgauge.PowerUsageFeatureProvider;
 
 /**
  * {@link FeatureFactory} implementation for AOSP Settings.
@@ -41,11 +40,6 @@ public class FeatureFactoryImpl extends FeatureFactory {
             mSupportManagerCallback = new SupportManagerCallbackImpl();
         }
         return mSupportManagerCallback;
-    }
-
-    @Override
-    public PowerUsageFeatureProvider getPowerUsageFeatureProvider(Context context) {
-        return null;
     }
 
     @Override
