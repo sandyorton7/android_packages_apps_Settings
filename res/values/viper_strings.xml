@@ -28,13 +28,16 @@
     <!-- Support Greeting -->
     <string name="support_welcome_title">Support for you, on the go</string>
     <string name="support_welcome_title_summary">You can check out tips &amp; tricks, locate new features and more</string>
+    <string name="support_welcome_title_summary_unavailable">Support is currently unavailable, please check with your software maintainer</string>
     <!-- Support Report Button -->
     <string name="support_escalation_by_report">Report</string>
     <string name="support_escalation_by_report_error">Bug reporting is unavailable at this time</string>
+    <!-- Support Email Button -->
+    <string name="support_escalation_by_email">Email</string>
+    <string name="support_escalation_by_email_error">Email support is unavailable at this time</string>
     <!-- Support Help Item -->
     <string name="support_help_locate">Help &amp; tips</string>
-	
-    <!-- Software information-->
+    <!-- Support Weblinks Item -->
     <string name="weblinks_settings_title">Weblinks</string>
     <!-- Social category -->
     <string name="social_category_title">Social</string>

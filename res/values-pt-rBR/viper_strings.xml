@@ -31,10 +31,12 @@
   <!-- Support Report Button -->
   <string name="support_escalation_by_report">Relatório</string>
   <string name="support_escalation_by_report_error">O relatório de erros não está disponível neste momento</string>
+  <!-- Support Email Button -->
+  <string name="support_escalation_by_email">Email</string>
+  <string name="support_escalation_by_email_error">O suporte por e-mail não está disponível no momento</string>
   <!-- Support Help Item -->
   <string name="support_help_locate">Ajuda &amp; Dicas</string>
-	
-  <!-- Software information-->
+  <!-- Support Weblinks Item -->
   <string name="weblinks_settings_title">Links da Web</string>
   <!-- Social category -->
   <string name="social_category_title">Social</string>
