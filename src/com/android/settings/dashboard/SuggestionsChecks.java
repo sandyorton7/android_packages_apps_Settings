@@ -36,7 +36,6 @@ import com.android.settings.Settings.ScreenLockSuggestionActivity;
 import com.android.settings.Settings.WifiCallingSuggestionActivity;
 import com.android.settings.Settings.ZenModeAutomationSuggestionActivity;
 import com.android.settings.WallpaperSuggestionActivity;
-import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.drawer.Tile;
 
 import java.util.Collection;
@@ -67,13 +66,6 @@ public class SuggestionsChecks {
         } else if (className.equals(FingerprintEnrollSuggestionActivity.class.getName())) {
             return isDeviceSecured() || !isFingerprintEnabled();
         }
-
-        SuggestionFeatureProvider provider =
-            FeatureFactory.getFactory(mContext).getSuggestionFeatureProvider();
-        if (provider != null && provider.isPresent(className)) {
-            return provider.isSuggestionCompleted(mContext);
-        }
-
         return false;
     }
 

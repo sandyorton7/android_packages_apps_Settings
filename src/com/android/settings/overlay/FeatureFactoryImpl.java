@@ -20,8 +20,6 @@ import android.content.Context;
 import android.support.annotation.Keep;
 import com.android.settings.aoscp.support.SupportManagerCallback;
 import com.android.settings.aoscp.support.SupportManagerCallbackImpl;
-import com.android.settings.dashboard.SuggestionFeatureProvider;
-import com.android.settings.dashboard.SuggestionFeatureProviderImpl;
 import com.android.settings.fuelgauge.PowerUsageFeatureProvider;
 
 /**
@@ -30,9 +28,8 @@ import com.android.settings.fuelgauge.PowerUsageFeatureProvider;
 @Keep
 public class FeatureFactoryImpl extends FeatureFactory {
 
-    private SuggestionFeatureProvider mSuggestionFeatureProvider;
     private SupportManagerCallback mSupportManagerCallback;
-
+	
     @Override
     public SupportFeatureProvider getSupportFeatureProvider(Context context) {
         return null;
@@ -54,14 +51,6 @@ public class FeatureFactoryImpl extends FeatureFactory {
     @Override
     public SurveyFeatureProvider getSurveyFeatureProvider(Context context) {
         return null;
-    }
-
-    @Override
-    public SuggestionFeatureProvider getSuggestionFeatureProvider() {
-        if (mSuggestionFeatureProvider == null) {
-            mSuggestionFeatureProvider = new SuggestionFeatureProviderImpl();
-        }
-        return mSuggestionFeatureProvider;
     }
 
 }
