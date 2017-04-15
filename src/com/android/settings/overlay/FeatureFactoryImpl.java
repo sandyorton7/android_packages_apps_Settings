@@ -23,7 +23,6 @@ import com.android.settings.aoscp.support.SupportManagerCallbackImpl;
 import com.android.settings.dashboard.SuggestionFeatureProvider;
 import com.android.settings.dashboard.SuggestionFeatureProviderImpl;
 import com.android.settings.fuelgauge.PowerUsageFeatureProvider;
-import com.android.settings.fuelgauge.PowerUsageFeatureProviderImpl;
 
 /**
  * {@link FeatureFactory} implementation for AOSP Settings.
@@ -32,7 +31,6 @@ import com.android.settings.fuelgauge.PowerUsageFeatureProviderImpl;
 public class FeatureFactoryImpl extends FeatureFactory {
 
     private SuggestionFeatureProvider mSuggestionFeatureProvider;
-    private PowerUsageFeatureProvider mPowerUsageFeatureProvider;
     private SupportManagerCallback mSupportManagerCallback;
 
     @Override
@@ -50,10 +48,7 @@ public class FeatureFactoryImpl extends FeatureFactory {
 
     @Override
     public PowerUsageFeatureProvider getPowerUsageFeatureProvider(Context context) {
-        if (mPowerUsageFeatureProvider == null) {
-            mPowerUsageFeatureProvider = new PowerUsageFeatureProviderImpl(context);
-        }
-        return mPowerUsageFeatureProvider;
+        return null;
     }
 
     @Override
