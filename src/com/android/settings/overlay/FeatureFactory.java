@@ -64,8 +64,6 @@ public abstract class FeatureFactory {
 	
 	public abstract SupportManagerCallback getSupportManagerCallback(Context context);
 
-    public abstract SurveyFeatureProvider getSurveyFeatureProvider(Context context);
-
     public static final class FactoryNotFoundException extends RuntimeException {
         public FactoryNotFoundException(Throwable throwable) {
             super("Unable to create factory. Did you misconfigure Proguard?", throwable);
