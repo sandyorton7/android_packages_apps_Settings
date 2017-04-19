@@ -6,6 +6,7 @@
     <color name="theme_accent">#ff4285f4</color>
 
     <color name="gestures_setting_background_color">#424242</color>
+    <color name="card_background">#ff000000</color>
 
     <!-- Gesture Anywhere -->
     <color name="ga_gesture_color">#ff4285f4</color>
