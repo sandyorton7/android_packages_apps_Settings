@@ -7,6 +7,8 @@
 
     <color name="gestures_setting_background_color">#424242</color>
     <color name="card_background">#ff000000</color>
+    <color name="card_background_grey">#ff000000</color>
+    <color name="conversation_background">#ff000000</color>
 
     <!-- Gesture Anywhere -->
     <color name="ga_gesture_color">#ff4285f4</color>
