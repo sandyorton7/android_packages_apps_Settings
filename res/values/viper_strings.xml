@@ -48,4 +48,7 @@
     <string name="github_preference_title">Github</string>
     <string name="github_preference_title_summary">To get the latest information on what\'s improved in ViperOS, take a look at our Github</string>
 	
+    <!-- About phone screen, processor info label [CHAR LIMIT=40] --> 
+    <string name="processor_info">Processor</string>
+ 
 </resources>
