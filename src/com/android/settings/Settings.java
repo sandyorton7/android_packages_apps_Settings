@@ -167,4 +167,5 @@ public class Settings extends SettingsActivity {
     public static class WeblinksActivity extends SettingsActivity { /* empty */ }
     public static class VenomSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SubstratumActivity extends SettingsActivity { /* empty */ }
+    public static class MagiskActivity extends SettingsActivity { /* empty */ }
 }
