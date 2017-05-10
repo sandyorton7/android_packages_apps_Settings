@@ -31,7 +31,7 @@
                 android:summary="@string/viper_version_default"
                 android:icon="@drawable/ic_viper_about"/>
 
-        <!-- System update settings - launches activity -->
+        <!-- System update settings - launches activity
         <PreferenceScreen android:key="system_update_settings"
                 android:title="@string/system_update_settings_list_item_title"
                 android:summary="@string/system_update_settings_list_item_summary">
@@ -44,8 +44,18 @@
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="@string/additional_system_update"
                     android:targetClass="@string/additional_system_update_menu" />
-        </PreferenceScreen>
+        </PreferenceScreen> -->
 
+        <!-- Viper OTA -->
+        <PreferenceScreen
+            android:key="viper_ota"
+            android:title="@string/system_update_settings_list_item_title"
+            android:summary="@string/system_update_settings_list_item_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.viper.ota"
+                    android:targetClass="com.viper.ota.MainActivity" />
+        </PreferenceScreen>
+	
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
