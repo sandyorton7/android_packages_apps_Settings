@@ -17,7 +17,7 @@
     <!-- General strings -->
     <string name="header_category_custom">Viper Additions</string>
     <string name="venom_title">Venom</string>
-    <string name="venom_title_summary">Various additions</string>
+    <string name="venom_title_summary">ROM features &amp; customization</string>
     <string name="substratum_title">Substratum</string>
     <string name="substratum_summary">Customize device theme</string>
     <string name="magisk_title">Magisk Manager</string>
