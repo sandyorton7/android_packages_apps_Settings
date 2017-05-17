@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+     Copyright (C) 2017 ViperOs Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- General strings -->
+    <string name="header_category_custom">Adiciones Viper</string>
+    <string name="venom_title">Venom</string>
+    <string name="venom_title_summary">Caracteristicas &amp; Personalización</string>
+    <string name="substratum_title">Substratum</string>
+    <string name="substratum_summary">Personalizar el tema del dispositivo</string>
+    <string name="magisk_title">Magisk Manager</string>
+    <string name="magisk_summary">Root management</string>
+
+    <!-- About phone screen, ViperOs version -->
+    <string name="viper_version_title">Versión de ViperOS</string>
+    <string name="viper_version_default">Unknown</string>
+	
+    <!-- Support Greeting -->
+    <string name="support_welcome_title">Soporte para usted, en cualquier lugar</string>
+    <string name="support_welcome_title_summary">Puede consultar las sugerencias, Trucos, nuevas funciones y más</string>
+    <string name="support_welcome_title_summary_unavailable">La asistencia no está disponible en este momento, consulte con el mantenedor del software</string>
+    <!-- Support Report Button -->
+    <string name="support_escalation_by_report">Informe</string>
+    <string name="support_escalation_by_report_error">El informe de errores no está disponible en este momento</string>
+    <!-- Support Email Button -->
+    <string name="support_escalation_by_email">Email</string>
+    <string name="support_escalation_by_email_error">El soporte de correo electrónico no está disponible en este momento</string>
+    <!-- Support Help Item -->
+    <string name="support_help_locate">Ayuda &amp; tips</string>
+    <!-- Support Weblinks Item -->
+    <string name="weblinks_settings_title">Weblinks</string>
+    <!-- Social category -->
+    <string name="social_category_title">Social</string>
+    <string name="google_preference_title">ViperPlus</string>
+    <string name="google_preference_title_summary">Manténgase en contacto con otros usuarios y desarrolladores de ViperOS en la comunidad de Google Plus</string>
+    <!-- Source category -->
+    <string name="source_category_title">Source</string>
+    <string name="github_preference_title">Github</string>
+    <string name="github_preference_title_summary">Para obtener la información más reciente sobre lo que ha mejorado en ViperOS, eche un vistazo a nuestro Github</string>
+	
+    <!-- About phone screen, processor info label [CHAR LIMIT=40] --> 
+    <string name="processor_info">Procesador</string>
+
+    <!-- RAM: Memory Info -->
+    <string name="mem_info">RAM</string>
+ 
+</resources>
