@@ -25,26 +25,4 @@
   <string name="viper_version_title">Versão ViperOS</string>
   <string name="viper_version_default">Desconhecida</string>
   
-  <!-- Support Greeting -->
-  <string name="support_welcome_title">Suporte para você, em qualquer lugar</string>
-  <string name="support_welcome_title_summary">Você pode verificar dicas &amp; Truques, localizar novos recursos e muito mais</string>
-  <!-- Support Report Button -->
-  <string name="support_escalation_by_report">Relatório</string>
-  <string name="support_escalation_by_report_error">O relatório de erros não está disponível neste momento</string>
-  <!-- Support Email Button -->
-  <string name="support_escalation_by_email">Email</string>
-  <string name="support_escalation_by_email_error">O suporte por e-mail não está disponível no momento</string>
-  <!-- Support Help Item -->
-  <string name="support_help_locate">Ajuda &amp; Dicas</string>
-  <!-- Support Weblinks Item -->
-  <string name="weblinks_settings_title">Links da Web</string>
-  <!-- Social category -->
-  <string name="social_category_title">Social</string>
-  <string name="google_preference_title">ViperPlus</string>
-  <string name="google_preference_title_summary">Mantenha contato com outros usuários e desenvolvedores do ViperOS na comunidade do Google+</string>
-  <!-- Source category -->
-  <string name="source_category_title">Fonte</string>
-  <string name="github_preference_title">Github</string>
-  <string name="github_preference_title_summary">Para obter as informações mais recentes sobre o que é melhorado na ViperOS, dê uma olhada no nosso Github</string>
-	
 </resources>

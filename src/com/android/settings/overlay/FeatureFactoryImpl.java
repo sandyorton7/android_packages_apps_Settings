@@ -17,8 +17,6 @@
 package com.android.settings.overlay;
 
 import android.content.Context;
-import com.android.settings.aoscp.support.SupportManagerCallback;
-import com.android.settings.aoscp.support.SupportManagerCallbackImpl;
 import android.support.annotation.Keep;
 import com.android.settings.dashboard.SuggestionFeatureProvider;
 import com.android.settings.dashboard.SuggestionFeatureProviderImpl;
@@ -39,14 +37,6 @@ public class FeatureFactoryImpl extends FeatureFactory {
     @Override
     public SupportFeatureProvider getSupportFeatureProvider(Context context) {
         return null;
-    }
-	
-	@Override
-    public SupportManagerCallback getSupportManagerCallback(Context context) {
-        if (mSupportManagerCallback == null) {
-            mSupportManagerCallback = new SupportManagerCallbackImpl();
-        }
-        return mSupportManagerCallback;
     }
 
     @Override

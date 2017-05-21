@@ -86,7 +86,7 @@
                 android:title="@string/safety_and_regulatory_info">
                 <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO" />
         </PreferenceScreen>
-	
+
         <!-- Feedback on the device -->
         <PreferenceScreen android:key="device_feedback"
                 android:title="@string/device_feedback">
