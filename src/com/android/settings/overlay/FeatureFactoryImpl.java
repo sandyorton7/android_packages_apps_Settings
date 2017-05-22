@@ -31,8 +31,6 @@ public class FeatureFactoryImpl extends FeatureFactory {
 
     private SuggestionFeatureProvider mSuggestionFeatureProvider;
     private PowerUsageFeatureProvider mPowerUsageFeatureProvider;
-
-    private SupportManagerCallback mSupportManagerCallback;
 	
     @Override
     public SupportFeatureProvider getSupportFeatureProvider(Context context) {
