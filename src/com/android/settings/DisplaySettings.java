@@ -45,8 +45,6 @@ import android.support.v7.preference.PreferenceCategory;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.settings.util.Helpers;
-
 import com.android.internal.app.NightDisplayController;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
