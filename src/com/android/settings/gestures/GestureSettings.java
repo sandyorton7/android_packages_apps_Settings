@@ -41,7 +41,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.android.internal.util.du.DuUtils;
+import com.android.internal.util.viper.PackageUtils;
 import android.support.v7.preference.PreferenceScreen;
 
 /**
@@ -121,12 +121,12 @@ public class GestureSettings extends SettingsPreferenceFragment implements
         }
 
         mDeviceGestures = (PreferenceScreen) findPreference(PREF_KEY_DEVICE_GESTURES);
-        if (!DuUtils.isAvailableApp(DEVICE_GESTURES_PACKAGE_NAME,context)) {
+        if (!PackageUtils.isAvailableApp(DEVICE_GESTURES_PACKAGE_NAME,context)) {
             removePreference(PREF_KEY_DEVICE_GESTURES);
         }
 
         mDeviceDoze = (PreferenceScreen) findPreference(PREF_KEY_DEVICE_DOZE);
-        if (!DuUtils.isAvailableApp(DEVICE_DOZE_PACKAGE_NAME,context)) {
+        if (!PackageUtils.isAvailableApp(DEVICE_DOZE_PACKAGE_NAME,context)) {
             removePreference(PREF_KEY_DEVICE_DOZE);
         }
 
