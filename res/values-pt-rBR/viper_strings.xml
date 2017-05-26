@@ -33,10 +33,4 @@
   <!-- RAM: Memory Info -->
   <string name="mem_info">RAM</string>
   
-  <string name="device_gestures_title">Gestos do dispositivo</string>
-  <string name="device_gestures_summary">Configure gestos extras para seu dispositivo</string>
-
-  <string name="device_doze_title">Gestos de exibição ambiente</string>
-  <string name="device_doze_summary">Configurar gestos extras para o modo de exibição de ambiente</string>
-	
 </resources>
