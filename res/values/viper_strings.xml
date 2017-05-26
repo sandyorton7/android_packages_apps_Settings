@@ -106,4 +106,8 @@
     <string name="force_authorize_substratum_packages_title">Force authorize every theme app</string>
     <string name="force_authorize_substratum_packages_summary">Allow theme apps from unknown sources</string>
 
+    <!-- Development Settings summary-->
+    <string name="adb_enabled">ADB Enabled</string>
+    <string name="adb_disabled">ADB Disabled</string>
+
 </resources>
