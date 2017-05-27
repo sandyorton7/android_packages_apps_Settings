@@ -31,6 +31,7 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
+import android.support.v7.preference.PreferenceScreen;
 import android.telephony.CarrierConfigManager;
 import android.text.TextUtils;
 import android.util.Log;
@@ -49,6 +50,8 @@ import com.android.internal.os.IRegionalizationService;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import com.android.internal.util.viper.PackageUtils;
 
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
@@ -83,6 +86,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String QGP_VERSION_PATH = "/persist/speccfg/qgpversion";
     private static final String KEY_VIPER_VERSION = "viper_version";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
+
+    private static final String KEY_VIPEROTA = "viper_ota";
+    private static final String KEY_VIPEROTA_PACKAGE_NAME = "com.viper.ota";
+
+    private PreferenceScreen mViperOTA;
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -211,6 +219,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
         removePreferenceIfActivityMissing(
                 "safety_info", "android.settings.SHOW_SAFETY_AND_REGULATORY_INFO");
+
+        mViperOTA = (PreferenceScreen) findPreference(KEY_VIPEROTA);
+        String buildtype = SystemProperties.get("ro.viper.buildtype","unofficial");
+        if (!buildtype.equalsIgnoreCase("official") || !PackageUtils.isAppInstalled(getActivity(), KEY_VIPEROTA_PACKAGE_NAME)) {
+            getPreferenceScreen().removePreference(mViperOTA);
+        }
     }
 
     @Override
