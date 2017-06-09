@@ -53,14 +53,4 @@
                 android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
         </PreferenceScreen>
 
-        <cyanogenmod.preference.CMSecureSettingSwitchPreference
-            android:key="lockscreen_visualizer"
-            android:title="@string/lockscreen_visualizer_title"
-            android:defaultValue="true"/>
-
-        <cyanogenmod.preference.CMSecureSettingSwitchPreference
-            android:key="lock_screen_blur_enabled"
-            android:title="@string/lockscreen_blur_enabled_title"
-            cm:requiresConfig="@*android:bool/config_uiBlurEnabled" />
-
 </PreferenceScreen>
