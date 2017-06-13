@@ -706,11 +706,6 @@ public class ManageApplications extends InstrumentedFragment
         mApplications.mExtraInfoBridge.onPackageListChanged();
     }
 
-    @Override
-    public void onResetCompleted() {
-        mApplications.mExtraInfoBridge.onPackageListChanged();
-    }
-
     static class FilterSpinnerAdapter extends ArrayAdapter<CharSequence> {
 
         private final ManageApplications mManageApplications;

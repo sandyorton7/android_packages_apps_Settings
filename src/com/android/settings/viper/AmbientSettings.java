@@ -9,6 +9,8 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.PowerManager;
+import android.os.Build;
+import android.os.SystemProperties;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -22,10 +24,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
+import android.text.TextUtils;
+import android.os.UserHandle;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.viper.venom.preference.CustomSeekBarPreference;
 
 public class AmbientSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -49,7 +54,7 @@ public class AmbientSettings extends SettingsPreferenceFragment
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.EXTENSIONS;
+        return MetricsEvent.VENOM;
     }
 
     @Override
@@ -75,6 +80,15 @@ public class AmbientSettings extends SettingsPreferenceFragment
         updateDozeOptions();
 
         mDozeBrightness = (Preference) findPreference(KEY_DOZE_BRIGHTNESS_LEVEL);
+    }
+
+    private static boolean isDozeAvailable(Context context) {
+        String name = Build.IS_DEBUGGABLE ? SystemProperties.get("debug.doze.component") : null;
+        if (TextUtils.isEmpty(name)) {
+            name = context.getResources().getString(
+                    com.android.internal.R.string.config_dozeComponent);
+        }
+        return !TextUtils.isEmpty(name);
     }
 
     private void updateDozeOptions() {

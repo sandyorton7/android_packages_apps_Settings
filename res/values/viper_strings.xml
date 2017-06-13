@@ -24,7 +24,7 @@
     <string name="magisk_summary">Root management</string>
 
     <!-- About phone screen, ViperOs version -->
-    <string name="viper_version_title">ViperOS Version</string>
+    <string name="viper_version_title">ViperOS</string>
     <string name="viper_version_default">Unknown</string>
 	
     <!-- About phone screen, processor info label [CHAR LIMIT=40] --> 
