@@ -45,7 +45,8 @@
     <string name="print_restart">Restart</string>
 
     <!-- Doze pulse options -->
-    <string name="doze_settings">Extra doze settings</string>
+    <string name="doze_settings">Extra ambient display settings</string>
+    <string name="doze_settings_summary">Customize pulse screen</string>
     <string name="summary_doze_enabled">Enabled</string>
     <string name="summary_doze_disabled">Disabled</string>
     <string name="doze_overwrite_value_title">Overwrite defaults</string>

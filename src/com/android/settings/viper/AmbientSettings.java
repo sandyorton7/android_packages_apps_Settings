@@ -36,7 +36,6 @@ public class AmbientSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
     private static final String TAG = "AmbientSettings";
 
-    private static final String KEY_DOZE = "doze";
     private static final String KEY_DOZE_PULSE_IN = "doze_pulse_in";
     private static final String KEY_DOZE_PULSE_VISIBLE = "doze_pulse_visible";
     private static final String KEY_DOZE_PULSE_OUT = "doze_pulse_out";
@@ -44,7 +43,6 @@ public class AmbientSettings extends SettingsPreferenceFragment
 
     private static final String SYSTEMUI_METADATA_NAME = "com.android.systemui";
 
-    private SwitchPreference mDozePreference;
     private ListPreference mDozePulseIn;
     private ListPreference mDozePulseVisible;
     private ListPreference mDozePulseOut;
@@ -64,9 +62,6 @@ public class AmbientSettings extends SettingsPreferenceFragment
         ContentResolver resolver = getActivity().getContentResolver();
 
         addPreferencesFromResource(R.xml.ambient_settings);
-
-        mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
-        mDozePreference.setOnPreferenceChangeListener(this);
 
         mDozePulseIn = (ListPreference) findPreference(KEY_DOZE_PULSE_IN);
         mDozePulseIn.setOnPreferenceChangeListener(this);
@@ -124,23 +119,12 @@ public class AmbientSettings extends SettingsPreferenceFragment
     @Override
     public void onResume() {
         super.onResume();
-        updateState();
         updateDozeOptions();
     }
 
     @Override
     public void onPause() {
         super.onPause();
-    }
-
-    private void updateState() {
-        // Update doze if it is available.
-        if (mDozePreference != null) {
-            int value = Settings.Secure.getInt(getContentResolver(), Settings.Secure.DOZE_ENABLED,
-                    getActivity().getResources().getBoolean(
-                    com.android.internal.R.bool.config_doze_enabled_by_default) ? 1 : 0);
-            mDozePreference.setChecked(value != 0);
-        }
     }
 
     @Override
@@ -154,10 +138,7 @@ public class AmbientSettings extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mDozePreference) {
-            boolean value = (Boolean) objValue;
-            Settings.Secure.putInt(getContentResolver(), Settings.Secure.DOZE_ENABLED, value ? 1 : 0);
-        } else if (preference == mDozePulseIn) {
+        if (preference == mDozePulseIn) {
             int dozePulseIn = Integer.parseInt((String)objValue);
             int index = mDozePulseIn.findIndexOfValue((String) objValue);
             mDozePulseIn.setSummary(mDozePulseIn.getEntries()[index]);
