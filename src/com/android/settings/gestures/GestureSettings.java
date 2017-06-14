@@ -51,6 +51,7 @@ public class GestureSettings extends SettingsPreferenceFragment implements
 
     private static final String TAG = "GestureSettings";
     private static final String PREF_KEY_DOUBLE_TAP_POWER = "gesture_double_tap_power";
+    private static final String PREF_KEY_DOUBLE_TAP_POWER_VIBRATE = "double_tap_vibrate";
     private static final String PREF_KEY_DOUBLE_TWIST = "gesture_double_twist";
     private static final String PREF_KEY_PICK_UP = "gesture_pick_up";
     private static final String PREF_KEY_SWIPE_DOWN_FINGERPRINT = "gesture_swipe_down_fingerprint";
@@ -75,6 +76,7 @@ public class GestureSettings extends SettingsPreferenceFragment implements
             addPreference(PREF_KEY_DOUBLE_TAP_POWER, cameraDisabled == 0);
         } else {
             removePreference(PREF_KEY_DOUBLE_TAP_POWER);
+            removePreference(PREF_KEY_DOUBLE_TAP_POWER_VIBRATE);
         }
 
         // Ambient Display

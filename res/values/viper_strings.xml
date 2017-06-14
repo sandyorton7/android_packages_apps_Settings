@@ -93,5 +93,9 @@
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+
+    <!-- Double tap power button vibration -->
+    <string name="camera_dbl_tap_vib_title">Vibration</string>
+    <string name="camera_dbl_tap_vib_summary">Vibrate on double tap</string>
 	
 </resources>
