@@ -91,5 +91,19 @@
   <!-- Double tap power button vibration -->
   <string name="camera_dbl_tap_vib_title">Vibrar</string>
   <string name="camera_dbl_tap_vib_summary">Vibrar no duplo toque</string>
+
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Sobreposições do substratum</string>
+  <string name="menu_show_substratum">Mostrar sobreposições</string>
+  <string name="menu_hide_substratum">Esconder as sobreposições</string>
+
+  <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Sobreposições de ícone do substratum</string>
+  <string name="menu_show_substratum_icons">Mostrar sobreposições de ícone</string>
+  <string name="menu_hide_substratum_icons">Ocultar sobreposições de ícone</string>
+
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Permitir aplicativos de temas de fontes desconhecidas</string>
+  <string name="force_authorize_substratum_packages_summary">Forçar autorização de cada aplicativo de tema</string>
   
 </resources>
