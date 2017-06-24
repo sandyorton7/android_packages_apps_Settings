@@ -7,7 +7,7 @@
         android:key="double_tap_wake_doze"
         android:title="@string/double_tap_wake_doze_title"
         android:summary="@string/double_tap_wake_doze_summary"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <com.viper.venom.preference.SystemSettingSwitchPreference
         android:key="ambient_display_show_battery"
