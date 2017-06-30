@@ -40,7 +40,7 @@
   <string name="print_restart">Riavvia</string>
   <!-- Doze pulse options -->
   <string name="doze_settings">Impostazioni extra ambient display</string>
-  <string name="doze_settings_summary">Personalizzare la schermata di pulse</string>
+  <string name="doze_settings_summary">Personalizza la schermata di pulse</string>
   <string name="summary_doze_enabled">Abilitato</string>
   <string name="summary_doze_disabled">Disabilitato</string>
   <string name="doze_overwrite_value_title">Sovrascrivi le impostazioni predefinite</string>
@@ -77,7 +77,7 @@
   <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando vengono inseriti il PIN o la password corretti</string>
   <!-- Double tap power button vibration -->
   <string name="camera_dbl_tap_vib_title">Vibrazione</string>
-  <string name="camera_dbl_tap_vib_summary">Vibrare al doppio tocco </string>
+  <string name="camera_dbl_tap_vib_summary">Vibra al doppio tocco</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Overlay Substratum</string>
   <string name="menu_show_substratum">Mostra overlay</string>
