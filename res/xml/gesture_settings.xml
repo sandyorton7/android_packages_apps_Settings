@@ -40,7 +40,6 @@
 
     <com.viper.venom.preference.SystemSettingSwitchPreference
         android:key="double_tap_vibrate"
-        android:icon="@drawable/vibration"
         android:title="@string/camera_dbl_tap_vib_title"
         android:summary="@string/camera_dbl_tap_vib_summary"
         android:defaultValue="true"
@@ -52,6 +51,11 @@
         android:summary="@string/double_twist_for_camera_mode_summary"
         settings:animation="@raw/gesture_twist"
         settings:preview="@drawable/gesture_twist"/>
+
+    <com.android.settings.gestures.GesturePreference
+        android:key="gesture_three_finger_screenshot"
+        android:title="@string/three_finger_screenshot_title"
+        android:summary="@string/three_finger_screenshot_summary" />
 
     <com.android.settings.gestures.GesturePreference
         android:key="gesture_double_tap_screen"
