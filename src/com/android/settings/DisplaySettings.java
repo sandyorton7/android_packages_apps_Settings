@@ -25,6 +25,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.ComponentName;
 import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.hardware.Sensor;
@@ -56,6 +57,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedPreference;
+import android.content.Intent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,6 +87,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_DOZE = "doze";
+    private static final String KEY_DOZE_CM = "doze_device_settings";
     private static final String KEY_DOZE_FRAGMENT = "doze_fragment";
     private static final String KEY_LIFT_TO_WAKE = "lift_to_wake";
     private static final String KEY_TAP_TO_WAKE = "tap_to_wake";
@@ -102,6 +105,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private Preference mScreenSaverPreference;
     private SwitchPreference mLiftToWakePreference;
     private SwitchPreference mDozePreference;
+    private PreferenceScreen mDozePreferenceCM;
     private PreferenceScreen mDozeFragment;
     private SwitchPreference mTapToWakePreference;
     private SwitchPreference mAutoBrightnessPreference;
@@ -157,12 +161,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
 
             mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
-            if (mDozePreference != null) {
-                if (isDozeAvailable(activity)) {
-                    mDozePreference.setOnPreferenceChangeListener(this);
-                } else {
-                    displayPrefs.removePreference(mDozePreference);
-                }
+            mDozePreferenceCM = (PreferenceScreen) findPreference(KEY_DOZE_CM);
+            if (isCMDozeAvailable()) {
+                displayPrefs.removePreference(mDozePreference);
+            } else {
+                displayPrefs.removePreference(mDozePreferenceCM);
+                mDozePreference.setOnPreferenceChangeListener(this);
             }
 
             mDozeFragment = (PreferenceScreen) findPreference(KEY_DOZE_FRAGMENT);
@@ -414,6 +418,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mFontSizePref.setSummary(entries[index]);
     }
 
+    private boolean isCMDozeAvailable() {
+        Intent intent = new Intent();
+        intent.setAction("org.cyanogenmod.settings.device.DOZE_SETTINGS");
+        List<ResolveInfo> list = getPackageManager().queryIntentActivities(intent,
+            PackageManager.MATCH_DEFAULT_ONLY);
+        return list.size() > 0;
+    }
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
@@ -550,6 +562,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     if (!isDozeAvailable(context)) {
                         result.add(KEY_DOZE);
                         result.add(KEY_DOZE_FRAGMENT);
+                        result.add(KEY_DOZE_CM);
                     }
                     if (!RotationPolicy.isRotationLockToggleVisible(context)) {
                         result.add(KEY_AUTO_ROTATE);
