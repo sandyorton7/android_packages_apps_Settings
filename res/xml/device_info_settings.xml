@@ -48,8 +48,8 @@
 
         <!-- Viper OTA -->
        <PreferenceScreen android:key="viper_ota"
-            android:title="@string/system_update_settings_list_item_title"
-            android:summary="@string/system_update_settings_list_item_summary">
+            android:title="@string/ota_viper_title"
+            android:summary="@string/ota_viper_summary">
              <intent android:action="android.intent.action.MAIN"
                      android:targetPackage="com.viper.ota"
                      android:targetClass="com.viper.ota.UpdatesActivity" />
