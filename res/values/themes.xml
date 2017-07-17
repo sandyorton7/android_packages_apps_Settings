@@ -34,7 +34,8 @@
     <style name="SetupWizardTheme" parent="SuwThemeGlif">
         <!-- For all Alert Dialogs -->
         <item name="android:alertDialogTheme">@style/ThemeOverlay.AlertDialog</item>
-        <item name="android:colorPrimary">@color/suw_color_accent_dark</item>
+        <item name="android:colorPrimary">@*android:color/accent_material_light</item>
+        <item name="android:colorAccent">@*android:color/accent_material_light</item>
         <item name="android:windowBackground">?android:attr/colorBackground</item>
         <item name="@*android:preferencePanelStyle">@*android:style/PreferencePanel.Dialog</item>
         <item name="fingerprint_layout_theme">@style/FingerprintLayoutTheme</item>
@@ -58,7 +59,8 @@
     <style name="SetupWizardTheme.Light" parent="SuwThemeGlif.Light">
         <!-- For all Alert Dialogs -->
         <item name="android:alertDialogTheme">@style/ThemeOverlay.AlertDialog</item>
-        <item name="android:colorPrimary">@color/suw_color_accent_light</item>
+        <item name="android:colorPrimary">@*android:color/accent_material_light</item>
+        <item name="android:colorAccent">@*android:color/accent_material_light</item>
         <item name="android:windowBackground">?android:attr/colorBackground</item>
         <item name="@*android:preferencePanelStyle">@*android:style/PreferencePanel.Dialog</item>
         <item name="fingerprint_layout_theme">@style/FingerprintLayoutTheme</item>
