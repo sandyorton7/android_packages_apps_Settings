@@ -45,9 +45,13 @@ public class Helpers {
     }
 
     public static void showSystemUIrestartDialog(Activity a) {
+        showSystemUIrestartDialog(a, a.getResources().getString(R.string.systemui_restart_title), a.getResources().getString(R.string.systemui_restart_message));
+    }
+
+    public static void showSystemUIrestartDialog(Activity a, String dialogTitle, String dialogMessage) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(a);
-        builder.setTitle(R.string.systemui_restart_title);
-        builder.setMessage(R.string.systemui_restart_message);
+        builder.setTitle(dialogTitle);
+        builder.setMessage(dialogMessage);
         builder.setPositiveButton(R.string.print_restart,
                 new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
