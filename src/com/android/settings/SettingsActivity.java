@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import android.app.ActivityManager;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -25,6 +26,7 @@ import android.app.ActionBar;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
@@ -145,6 +147,7 @@ import java.util.Set;
 import com.viper.venom.Venom;
 import com.viper.themechooser.ChooserActivity;
 import com.viper.themechooser.ChooserSettingsActivity;
+import com.viper.colorengine.utils.ColorEngineUtils;
 
 public class SettingsActivity extends SettingsDrawerActivity
         implements PreferenceManager.OnPreferenceTreeClickListener,
@@ -227,10 +230,10 @@ public class SettingsActivity extends SettingsDrawerActivity
     public static final String EXTRA_LAUNCH_ACTIVITY_ACTION = ":settings:launch_activity_action";
 
     public static final String META_DATA_KEY_FRAGMENT_CLASS =
-        "com.android.settings.FRAGMENT_CLASS";
+            "com.android.settings.FRAGMENT_CLASS";
 
     public static final String META_DATA_KEY_LAUNCH_ACTIVITY_ACTION =
-        "com.android.settings.ACTIVITY_ACTION";
+            "com.android.settings.ACTIVITY_ACTION";
 
     private static final String EXTRA_UI_OPTIONS = "settings:ui_options";
 
@@ -243,7 +246,7 @@ public class SettingsActivity extends SettingsDrawerActivity
     private static final String MAGISK_FRAGMENT = "com.android.settings.MagiskManager";
 
     private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
-	
+
     private String mFragmentClass;
     private String mActivityAction;
 
@@ -559,11 +562,11 @@ public class SettingsActivity extends SettingsDrawerActivity
         final Intent intent = getIntent();
         if (intent.hasExtra(EXTRA_LAUNCH_ACTIVITY_ACTION)) {
             if (mActivityAction != null) {
-               try{
-                   startActivity(new Intent(mActivityAction));
-               }catch(ActivityNotFoundException e){
-                   Log.w(LOG_TAG, "Activity not found for action: " + mActivityAction);
-               }
+                try{
+                    startActivity(new Intent(mActivityAction));
+                }catch(ActivityNotFoundException e){
+                    Log.w(LOG_TAG, "Activity not found for action: " + mActivityAction);
+                }
             }
             finish();
             return;
@@ -968,7 +971,7 @@ public class SettingsActivity extends SettingsDrawerActivity
      * request code to be received with the result.
      */
     public void startPreferencePanel(String fragmentClass, Bundle args, int titleRes,
-            CharSequence titleText, Fragment resultTo, int resultRequestCode) {
+                                     CharSequence titleText, Fragment resultTo, int resultRequestCode) {
         String title = null;
         if (titleRes < 0) {
             if (titleText != null) {
@@ -995,7 +998,7 @@ public class SettingsActivity extends SettingsDrawerActivity
      * @param userHandle The user for which the panel has to be started.
      */
     public void startPreferencePanelAsUser(String fragmentClass, Bundle args, int titleRes,
-            CharSequence titleText, UserHandle userHandle) {
+                                           CharSequence titleText, UserHandle userHandle) {
         // This is a workaround.
         //
         // Calling startWithFragmentAsUser() without specifying FLAG_ACTIVITY_NEW_TASK to the intent
@@ -1056,11 +1059,51 @@ public class SettingsActivity extends SettingsDrawerActivity
         transaction.commitAllowingStateLoss();
     }
 
+    @Override
+    public void onBackPressed() {
+        try{
+            Fragment fragment = getFragmentManager().findFragmentByTag("com.viper.themechooser.ChooserActivity");
+            if (fragment instanceof ChooserActivity) {
+                if(ColorEngineUtils.isApplyRequired(this)){
+                    showResetToDefaultThemeDialog();
+                }else{
+                    super.onBackPressed();
+                }
+            }else{
+                super.onBackPressed();
+            }
+        }catch(Exception e){
+            super.onBackPressed();
+        }
+    }
+
+    private void showResetToDefaultThemeDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.apply_theme);
+        builder.setMessage(R.string.apply_theme_message);
+        builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                ColorEngineUtils.apply(SettingsActivity.this, getResources().getString(R.string.apply_theme_progress), true);
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNegativeButton(R.string.apply_theme_not_now, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
     /**
      * Switch to a specific Fragment with taking care of validation, Title and BackStack
      */
     private Fragment switchToFragment(String fragmentName, Bundle args, boolean validate,
-            boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
+                                      boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
         if (MAGISK_FRAGMENT.equals(fragmentName)) {
             Intent magiskIntent = new Intent();
             magiskIntent.setClassName("com.topjohnwu.magisk", "com.topjohnwu.magisk.SplashActivity");
@@ -1081,7 +1124,7 @@ public class SettingsActivity extends SettingsDrawerActivity
         }
         Fragment f = Fragment.instantiate(this, fragmentName, args);
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.main_content, f);
+        transaction.replace(R.id.main_content, f, fragmentName);
         if (withTransition) {
             TransitionManager.beginDelayedTransition(mContent);
         }
@@ -1120,29 +1163,29 @@ public class SettingsActivity extends SettingsDrawerActivity
                 pm.hasSystemFeature(PackageManager.FEATURE_WIFI), isAdmin, pm);
 
         setTileEnabled(new ComponentName(packageName,
-                Settings.BluetoothSettingsActivity.class.getName()),
+                        Settings.BluetoothSettingsActivity.class.getName()),
                 pm.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH), isAdmin, pm);
 
         setTileEnabled(new ComponentName(packageName,
-                Settings.DataUsageSummaryActivity.class.getName()),
+                        Settings.DataUsageSummaryActivity.class.getName()),
                 Utils.isBandwidthControlEnabled(), isAdmin, pm);
 
         setTileEnabled(new ComponentName(packageName,
-                Settings.RoamingSettingsActivity.class.getName()),
+                        Settings.RoamingSettingsActivity.class.getName()),
                 getResources().getBoolean(R.bool.config_roamingsettings_enabled), isAdmin, pm);
 
         setTileEnabled(new ComponentName(packageName,
-                Settings.SimSettingsActivity.class.getName()),
+                        Settings.SimSettingsActivity.class.getName()),
                 Utils.showSimCardTile(this), isAdmin, pm);
 
         setTileEnabled(new ComponentName(packageName,
-                Settings.PowerUsageSummaryActivity.class.getName()),
+                        Settings.PowerUsageSummaryActivity.class.getName()),
                 mBatteryPresent, isAdmin, pm);
 
         setTileEnabled(new ComponentName(packageName,
-                Settings.UserSettingsActivity.class.getName()),
+                        Settings.UserSettingsActivity.class.getName()),
                 UserHandle.MU_ENABLED && UserManager.supportsMultipleUsers()
-                && !Utils.isMonkeyRunning(), isAdmin, pm);
+                        && !Utils.isMonkeyRunning(), isAdmin, pm);
 
         setTileEnabled(new ComponentName(packageName,
                         Settings.WirelessSettingsActivity.class.getName()),
@@ -1158,25 +1201,25 @@ public class SettingsActivity extends SettingsDrawerActivity
                         && pm.hasSystemFeature(PackageManager.FEATURE_NFC_HOST_CARD_EMULATION)
                         && adapter != null && adapter.isEnabled(), isAdmin, pm);
         setTileEnabled(new ComponentName(packageName,
-                Settings.PrintSettingsActivity.class.getName()),
+                        Settings.PrintSettingsActivity.class.getName()),
                 pm.hasSystemFeature(PackageManager.FEATURE_PRINTING), isAdmin, pm);
 
         final boolean showDev = mDevelopmentPreferences.getBoolean(
-                    DevelopmentSettings.PREF_SHOW, android.os.Build.TYPE.equals("eng"))
+                DevelopmentSettings.PREF_SHOW, android.os.Build.TYPE.equals("eng"))
                 && !um.hasUserRestriction(UserManager.DISALLOW_DEBUGGING_FEATURES);
         setTileEnabled(new ComponentName(packageName,
                         Settings.DevelopmentSettingsActivity.class.getName()),
                 showDev, isAdmin, pm);
 
-         // Magisk Manager
-         boolean magiskSupported = false;
-         try {
-             magiskSupported = (getPackageManager().getPackageInfo("com.topjohnwu.magisk", 0).versionCode > 0);
-         } catch (PackageManager.NameNotFoundException e) {
-         }
-         setTileEnabled(new ComponentName(packageName,
-                         Settings.MagiskActivity.class.getName()),
-                 magiskSupported, isAdmin, pm);
+        // Magisk Manager
+        boolean magiskSupported = false;
+        try {
+            magiskSupported = (getPackageManager().getPackageInfo("com.topjohnwu.magisk", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.MagiskActivity.class.getName()),
+                magiskSupported, isAdmin, pm);
 
         // Substratum
         boolean subSupported = false;
@@ -1187,7 +1230,7 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.SubstratumActivity.class.getName()),
                 subSupported, isAdmin, pm);
-				
+
         // Reveal development-only quick settings tiles
         DevelopmentTiles.setTilesEnabled(this, showDev);
 
@@ -1200,7 +1243,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             showTimerSwitch = true;
         }
         setTileEnabled(new ComponentName(packageName,
-                Settings.TimerSwitchSettingsActivity.class.getName()),
+                        Settings.TimerSwitchSettingsActivity.class.getName()),
                 showTimerSwitch, isAdmin, pm);
 
         if (UserHandle.MU_ENABLED && !isAdmin) {
@@ -1231,7 +1274,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             }
         }
         setTileEnabled(new ComponentName(packageName,
-                BackupSettingsActivity.class.getName()), hasBackupActivity,
+                        BackupSettingsActivity.class.getName()), hasBackupActivity,
                 isAdmin || Utils.isCarrierDemoUser(this), pm);
 
     }
