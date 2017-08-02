@@ -32,6 +32,8 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := \
         $(call all-java-files-under, src) \
         $(call all-java-files-under, ../Venom/src) \
+        $(call all-java-files-under, ../../../vendor/viper/colorengine/common/src) \
+        $(call all-java-files-under, ../../../vendor/viper/colorengine/themechooser/src) \
         src/com/android/settings/EventLogTags.logtags
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
@@ -39,7 +41,8 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v14/preference/res \
     frameworks/support/v7/appcompat/res \
     frameworks/support/v7/recyclerview/res \
-    packages/apps/Venom/res
+    packages/apps/Venom/res \
+    vendor/viper/colorengine/themechooser/res
 
 # Viper Color Engine
 $(warning *** Including Viper Color Engine ***)
@@ -52,7 +55,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
-    --extra-packages android.support.v7.preference:android.support.v14.preference:android.support.v17.preference:android.support.v7.appcompat:android.support.v7.recyclerview:com.viper.venom
+    --extra-packages android.support.v7.preference:android.support.v14.preference:android.support.v17.preference:android.support.v7.appcompat:android.support.v7.recyclerview:com.viper.venom:com.viper.themechooser
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled

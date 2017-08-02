@@ -168,4 +168,6 @@ public class Settings extends SettingsActivity {
     public static class SubstratumActivity extends SettingsActivity { /* empty */ }
     public static class MagiskActivity extends SettingsActivity { /* empty */ }
     public static class AmbientSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ThemeChooserActivity extends SettingsActivity { /* empty */ }
+    public static class ThemeChooserSettingsActivity extends SettingsActivity { /* empty */ }
 }

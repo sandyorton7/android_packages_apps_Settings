@@ -143,6 +143,8 @@ import java.util.List;
 import java.util.Set;
 
 import com.viper.venom.Venom;
+import com.viper.themechooser.ChooserActivity;
+import com.viper.themechooser.ChooserSettingsActivity;
 
 public class SettingsActivity extends SettingsDrawerActivity
         implements PreferenceManager.OnPreferenceTreeClickListener,
@@ -259,6 +261,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             Settings.WirelessSettingsActivity.class.getName(),
             //custom_section
             Venom.class.getName(),
+            ChooserActivity.class.getName(),
+            ChooserSettingsActivity.class.getName(),
             //device_section
             Settings.HomeSettingsActivity.class.getName(),
             Settings.SoundSettingsActivity.class.getName(),
@@ -380,6 +384,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             Venom.class.getName(),
+            ChooserActivity.class.getName(),
+            ChooserSettingsActivity.class.getName(),
             AmbientSettings.class.getName()
     };
 

@@ -2861,6 +2861,47 @@
                 android:value="true" />
         </activity>
 
+        <activity android:name="Settings$ThemeChooserActivity"
+            android:label="@string/theme_chooser_title"
+            android:icon="@drawable/ic_settings_vthemechooser"
+            android:taskAffinity="">
+            <intent-filter android:priority="2">
+                <action android:name="com.viper.themechooser.ChooserActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="9">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.custom" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.viper.themechooser.ChooserActivity" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/theme_chooser_summary" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+
+        <activity android:name="Settings$ThemeChooserSettingsActivity"
+            android:label="@string/theme_chooser_settings_title"
+            android:icon="@drawable/ic_settings_vthemechooser"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.viper.themechooser.ChooserSettingsActivity" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+
         <activity android:name="Settings$MagiskActivity"
                 android:label="@string/magisk_title"
                 android:icon="@drawable/ic_settings_magisk"

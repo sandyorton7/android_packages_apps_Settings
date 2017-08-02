@@ -26,6 +26,8 @@
 
 -keep class com.viper.venom.**
 
+-keep class com.viper.themechooser.**
+
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
   *** onClick*(...);
