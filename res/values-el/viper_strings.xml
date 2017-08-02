@@ -73,4 +73,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Να επιτρέπεται η εγκατάσταση θεμάτων εφαρμογών από άγνωστες πηγές</string>
   <string name="force_authorize_substratum_packages_summary">Εξαναγκασμός εξουσιοδότησης για κάθε εφαρμογή θέματος</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Γρήγορο ξεκλειδωμα</string>
+  <string name="unlock_quick_unlock_control_summary">Αυτόματο ξεκλείδωμα όταν δωθεί το σωστό PIN ή ο σωστός κωδικός</string>
+  <!-- Quick unlock information -->
 </resources>

@@ -55,4 +55,7 @@
   <string name="menu_hide_substratum">Dölj överlager</string>
   <!-- Manage applications: show substratum icon overlays -->
   <!-- Force authorize substratum packages -->
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <!-- Quick unlock information -->
 </resources>

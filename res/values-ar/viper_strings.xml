@@ -73,4 +73,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">إسمح لتطبيقات المظاهر من المصادر غير المعروفة</string>
   <string name="force_authorize_substratum_packages_summary">أجبر تصريح كل تطبيق مظاهر</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">الفك السريع</string>
+  <string name="unlock_quick_unlock_control_summary">فُك تلقائياً عند إدخال الرمز/كلمة المرور الصحيحة</string>
+  <!-- Quick unlock information -->
 </resources>

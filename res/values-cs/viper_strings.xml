@@ -15,6 +15,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="header_category_custom">Dodatky Viper</string>
+  <string name="venom_title">Venom</string>
+  <string name="venom_title_summary">Funkce ROM &amp; přizpůsobení</string>
   <string name="substratum_title">Substratum</string>
   <string name="substratum_summary">Přizpůsobit motiv vzhledu zařízení</string>
   <string name="magisk_title">Magisk manager</string>
@@ -36,6 +39,8 @@
   <string name="restarting_ui">Restartování UI\u2026</string>
   <string name="print_restart">Restartovat</string>
   <!-- Doze pulse options -->
+  <string name="doze_settings">Další nastavení ambientního displeje</string>
+  <string name="doze_settings_summary">Upravit pulsování obrazovky</string>
   <string name="summary_doze_enabled">Zapnuto</string>
   <string name="summary_doze_disabled">Vypnuto</string>
   <string name="doze_overwrite_value_title">Přepsat výchozí hodnoty</string>
@@ -45,7 +50,7 @@
   <string name="doze_pulse_duration_visible_title">Viditelné trvání</string>
   <string name="doze_pulse_duration_out_title">Postupné zeslabení</string>
   <string name="doze_brightness_level_title">Úroveň jasu</string>
-  <string name="onehundred_ms">100ms</string>
+  <string name="onehundred_ms">100 ms</string>
   <string name="twofifty_ms">250 ms</string>
   <string name="fivehundred_ms_default">500 ms (výchozí)</string>
   <string name="sevenfifty_ms">750 ms</string>
@@ -62,6 +67,8 @@
   <string name="doze_notification_color_invert_summary_off">Barvy oznámení nebudou obráceny (doporučeno pro tmavé motivy).</string>
   <string name="doze_notification_color_invert_summary_on">Barvy oznámení budou obráceny (doporučeno pro světlé motivy).</string>
   <!-- Double tap for doze -->
+  <string name="double_tap_wake_doze_title">Dvojitým poklepáním probudit z dřímoty</string>
+  <string name="double_tap_wake_doze_summary">Vyžaduje dvojí poklepání na obrazovku pro probuzení během režimu spánku</string>
   <!-- Battery Status in doze screen -->
   <string name="ambient_display_show_battery_title">Stav baterie</string>
   <string name="ambient_display_show_battery_summary">Zobrazit indikátor baterie během pulsování</string>
@@ -70,7 +77,7 @@
   <string name="unlock_quick_unlock_control_summary">Automatické odemknutí pokud je zadán správný PIN/heslo</string>
   <!-- Double tap power button vibration -->
   <string name="camera_dbl_tap_vib_title">Vibrace</string>
-  <string name="camera_dbl_tap_vib_summary">Vibrace při poklepání</string>
+  <string name="camera_dbl_tap_vib_summary">Vibrace při dvojitém klepnutí</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Substratum překrytí</string>
   <string name="menu_show_substratum">Zobrazit překrytí</string>
@@ -82,4 +89,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Povolit instalaci motivů z neznámých zdrojů</string>
   <string name="force_authorize_substratum_packages_summary">Vyžadovat povolení pro každý motiv</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Rychlé odemknutí</string>
+  <string name="unlock_quick_unlock_control_summary">Automatické odemknutí pokud je zadán správný PIN/heslo</string>
+  <!-- Quick unlock information -->
 </resources>

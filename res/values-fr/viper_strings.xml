@@ -15,6 +15,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="venom_title">Venom</string>
   <string name="magisk_title">Gestionnaire Magisk</string>
   <string name="magisk_summary">Gestion du root</string>
   <!-- About phone screen, ViperOs version -->
@@ -73,4 +74,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Autoriser les applications de thème depuis des sources inconnues</string>
   <string name="force_authorize_substratum_packages_summary">Forcer l’autorisation de chaque thème d\'application</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Déverrouillage rapide</string>
+  <string name="unlock_quick_unlock_control_summary">Déverrouiller automatiquement lorsque le bon code PIN/mot de passe est saisi</string>
+  <!-- Quick unlock information -->
 </resources>

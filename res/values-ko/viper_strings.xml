@@ -73,4 +73,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">알 수 없는 출처의 테마 앱 허용</string>
   <string name="force_authorize_substratum_packages_summary">테마가 적용된 모든 앱에 강제로 권한을 부여합니다</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">빠른 잠금 해제</string>
+  <string name="unlock_quick_unlock_control_summary">PIN/비밀번호를 올바르게 입력하면 자동으로 잠금을 해제합니다</string>
+  <!-- Quick unlock information -->
 </resources>

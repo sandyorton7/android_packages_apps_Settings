@@ -15,20 +15,32 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="header_category_custom">Rozšírenia Viper</string>
+  <string name="venom_title">Venom</string>
+  <string name="venom_title_summary">Funkcie ROM &amp; prispôsobenia</string>
+  <string name="substratum_title">Substratum</string>
+  <string name="substratum_summary">Prispôsobiť tému vzhľadu zariadenia</string>
   <string name="magisk_title">Správca Magisk</string>
   <string name="magisk_summary">Správca Root oprávnení</string>
   <!-- About phone screen, ViperOs version -->
+  <string name="viper_version_title">ViperOS</string>
+  <string name="viper_version_default">Neznáma</string>
   <!-- About phone screen, processor info label [CHAR LIMIT=40] -->
+  <string name="processor_info">Procesor</string>
   <!-- RAM: Memory Info -->
   <string name="mem_info">RAM</string>
   <!-- Menu label for reset the battery stats -->
+  <string name="menu_stats_reset">Vynulovať štatistiky</string>
   <!-- Reset stats confirmation dialog's message -->
+  <string name="reset_stats_msg">Chystáte sa vymazať históriu štatistiky batérie</string>
   <!-- SystemUI restart prompt -->
   <string name="systemui_restart_title">UPOZORNENIE</string>
   <string name="systemui_restart_message">Systém sa reštartuje, aby bolo vybrané nastavenie správne aplikované.</string>
   <string name="restarting_ui">Reštartovanie UI\u2026</string>
   <string name="print_restart">Reštartovať</string>
   <!-- Doze pulse options -->
+  <string name="doze_settings">Ďalšie nastavenia ambientneho displeja</string>
+  <string name="doze_settings_summary">Upraviť pulzovanie obrazovky</string>
   <string name="summary_doze_enabled">Zapnuté</string>
   <string name="summary_doze_disabled">Vypnuté</string>
   <string name="doze_overwrite_value_title">Prepísať predvolené hodnoty</string>
@@ -55,6 +67,8 @@
   <string name="doze_notification_color_invert_summary_off">Farby upozornení sa nezmenia (doporučené pre tmavé motívy).</string>
   <string name="doze_notification_color_invert_summary_on">Farby upozornení sa zmenia (doporučené pre svetlé motívy).</string>
   <!-- Double tap for doze -->
+  <string name="double_tap_wake_doze_title">Dvojklikom prebudiť zariadenie zo spánku</string>
+  <string name="double_tap_wake_doze_summary">Vyžaduje dvojklik na obrazovku pre prebudenie zariadenia zo spánku</string>
   <!-- Battery Status in doze screen -->
   <string name="ambient_display_show_battery_title">Stav batérie</string>
   <string name="ambient_display_show_battery_summary">Zobraziť indikátor batérie počas pulzovania</string>
@@ -62,6 +76,8 @@
   <string name="unlock_quick_unlock_control_title">Rýchle odomknutie</string>
   <string name="unlock_quick_unlock_control_summary">Odomknúť automaticky po zadaní správneho PIN kódu alebo hesla</string>
   <!-- Double tap power button vibration -->
+  <string name="camera_dbl_tap_vib_title">Vibrácie</string>
+  <string name="camera_dbl_tap_vib_summary">Vibrovať pri dvojkliku</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Substratum prekrytia</string>
   <string name="menu_show_substratum">Zobraziť prekrytia</string>
@@ -73,4 +89,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Povoliť inštaláciu tém z neznámych zdrojov</string>
   <string name="force_authorize_substratum_packages_summary">Vyžadovať povolenie pre každú tému</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Rýchle odomknutie</string>
+  <string name="unlock_quick_unlock_control_summary">Odomknúť automaticky po zadaní správneho PIN kódu alebo hesla</string>
+  <!-- Quick unlock information -->
 </resources>

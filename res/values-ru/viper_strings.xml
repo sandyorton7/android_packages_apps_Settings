@@ -15,20 +15,32 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="header_category_custom">Viper дополнения</string>
+  <string name="venom_title">Venom</string>
+  <string name="venom_title_summary">Функции и настройки ROM</string>
+  <string name="substratum_title">Substratum</string>
+  <string name="substratum_summary">Настроить тему устройства</string>
   <string name="magisk_title">Менеджер Magisk</string>
   <string name="magisk_summary">Управление правами суперпользователя</string>
   <!-- About phone screen, ViperOs version -->
+  <string name="viper_version_title">ViperOS</string>
+  <string name="viper_version_default">Неизвестно</string>
   <!-- About phone screen, processor info label [CHAR LIMIT=40] -->
+  <string name="processor_info">Процессор</string>
   <!-- RAM: Memory Info -->
   <string name="mem_info">ОЗУ</string>
   <!-- Menu label for reset the battery stats -->
+  <string name="menu_stats_reset">Сброс статистики</string>
   <!-- Reset stats confirmation dialog's message -->
+  <string name="reset_stats_msg">Статистика использования батареи будет сброшена</string>
   <!-- SystemUI restart prompt -->
   <string name="systemui_restart_title">Предупреждение</string>
   <string name="systemui_restart_message">Системный интерфейс будет перезапущен, для того чтобы выбранная настройка могла правильно примениться.</string>
   <string name="restarting_ui">Перезапуск пользовательского интерфейса\u2026</string>
   <string name="print_restart">Перезагрузить</string>
   <!-- Doze pulse options -->
+  <string name="doze_settings">Дополнительные параметры ambient display</string>
+  <string name="doze_settings_summary">Настроить отображение pulse</string>
   <string name="summary_doze_enabled">Включено</string>
   <string name="summary_doze_disabled">Выключено</string>
   <string name="doze_overwrite_value_title">Перезаписать значения по умолчанию</string>
@@ -55,6 +67,8 @@
   <string name="doze_notification_color_invert_summary_off">Уведомления не будут инвертированы. Используйте для темных тем.</string>
   <string name="doze_notification_color_invert_summary_on">Уведомления будут инвертированы. Используйте для светлых/стоковых тем.</string>
   <!-- Double tap for doze -->
+  <string name="double_tap_wake_doze_title">Двойное нажатие для пробуждения</string>
+  <string name="double_tap_wake_doze_summary">Требовать двойное нажатие, чтобы разбудить устройство на экране doze pulse</string>
   <!-- Battery Status in doze screen -->
   <string name="ambient_display_show_battery_title">Состояние батареи</string>
   <string name="ambient_display_show_battery_summary">Показывать значок батареи во время пульсации</string>
@@ -62,6 +76,8 @@
   <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
   <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически, когда введён корректный PIN-код/пароль</string>
   <!-- Double tap power button vibration -->
+  <string name="camera_dbl_tap_vib_title">Вибрация</string>
+  <string name="camera_dbl_tap_vib_summary">Вибрировать при двойном нажатии</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Слои Substratum</string>
   <string name="menu_show_substratum">Показать слои</string>
@@ -73,4 +89,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Разрешить установку тем из неизвестных источников</string>
   <string name="force_authorize_substratum_packages_summary">Принудительно запрашивать разрешения для каждой темы</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
+  <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически, когда введён корректный PIN-код/пароль</string>
+  <!-- Quick unlock information -->
 </resources>

@@ -65,4 +65,9 @@
   <string name="menu_show_substratum_icons">Arată icon suprapuneri</string>
   <string name="menu_hide_substratum_icons">Ascundeți icon suprapuneri</string>
   <!-- Force authorize substratum packages -->
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Deblocare rapidă</string>
+  <string name="unlock_quick_unlock_control_summary">Deblochează automat când se introduce corect PIN/parolă</string>
+  <!-- Quick unlock information -->
 </resources>

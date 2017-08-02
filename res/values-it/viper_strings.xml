@@ -17,7 +17,7 @@
   <!-- General strings -->
   <string name="header_category_custom">Aggiunte Viper</string>
   <string name="venom_title">Venom</string>
-  <string name="venom_title_summary">Personalizzazione &amp; caratteristiche ROM</string>
+  <string name="venom_title_summary">Personalizzazione e caratteristiche della ROM</string>
   <string name="substratum_title">Substratum</string>
   <string name="substratum_summary">Personalizza tema dispositivo</string>
   <string name="magisk_title">Magisk Manager</string>
@@ -43,13 +43,13 @@
   <string name="doze_settings_summary">Personalizza la schermata di pulse</string>
   <string name="summary_doze_enabled">Abilitato</string>
   <string name="summary_doze_disabled">Disabilitato</string>
-  <string name="doze_overwrite_value_title">Sovrascrivi le impostazioni predefinite</string>
+  <string name="doze_overwrite_value_title">Sovrascrivi impostazioni predefinite</string>
   <string name="doze_overwrite_value_summary">Consenti la sostituzione dei valori predefiniti con quelli dell\'utente</string>
   <string name="doze_pulse_title">Impostazioni configurabili dall\'utente</string>
   <string name="doze_pulse_duration_in_title">Dissolvenza in entrata</string>
   <string name="doze_pulse_duration_visible_title">Durata visibilità</string>
   <string name="doze_pulse_duration_out_title">Dissolvenza in uscita</string>
-  <string name="doze_brightness_level_title">Livello di luminosità</string>
+  <string name="doze_brightness_level_title">Livello luminosità</string>
   <string name="onehundred_ms">100 ms</string>
   <string name="twofifty_ms">250 ms</string>
   <string name="fivehundred_ms_default">500 ms (predefinito)</string>
@@ -63,12 +63,12 @@
   <string name="four_second">4 s</string>
   <string name="fourhalf_second">4.5 s</string>
   <string name="five_second">5 s</string>
-  <string name="doze_notification_color_invert_title">Inversione di notifica</string>
+  <string name="doze_notification_color_invert_title">Inversione notifiche</string>
   <string name="doze_notification_color_invert_summary_off">Le notifiche non saranno invertite. Usa per temi scuri.</string>
-  <string name="doze_notification_color_invert_summary_on">Le notifiche saranno invertite. Uso per temi luminosi/Stock.</string>
+  <string name="doze_notification_color_invert_summary_on">Le notifiche saranno invertite. Utilizzalo per temi chiari/stock.</string>
   <!-- Double tap for doze -->
   <string name="double_tap_wake_doze_title">Doppio tocco per attivare il dispositivo</string>
-  <string name="double_tap_wake_doze_summary">Richiede un doppio tocco per riattivare il dispositivo sullo schermo ad un impulso di doze</string>
+  <string name="double_tap_wake_doze_summary">Richiede un doppio tocco sullo schermo per riattivare il dispositivo ad un impulso di doze</string>
   <!-- Battery Status in doze screen -->
   <string name="ambient_display_show_battery_title">Stato Batteria</string>
   <string name="ambient_display_show_battery_summary">Mostra l\'indicatore della batteria durante il lampeggio</string>
@@ -89,4 +89,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Consenti l\'installazione di temi da fonti sconosciute</string>
   <string name="force_authorize_substratum_packages_summary">Forza l\'autorizzazione ad ogni applicazione del tema</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Sblocco veloce</string>
+  <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando vengono inseriti il PIN o la password corretti</string>
+  <!-- Quick unlock information -->
 </resources>

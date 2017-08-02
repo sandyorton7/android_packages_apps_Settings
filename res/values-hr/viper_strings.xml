@@ -15,14 +15,24 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="header_category_custom">Viper dodaci</string>
+  <string name="venom_title">Venom</string>
+  <string name="venom_title_summary">Značajke i prilagodba ROM-a</string>
+  <string name="substratum_title">Substratum</string>
+  <string name="substratum_summary">Prilagodi temu uređaja</string>
   <string name="magisk_title">Magisk Manager</string>
   <string name="magisk_summary">Upravljanje rootom</string>
   <!-- About phone screen, ViperOs version -->
+  <string name="viper_version_title">ViperOS</string>
+  <string name="viper_version_default">Nepoznato</string>
   <!-- About phone screen, processor info label [CHAR LIMIT=40] -->
+  <string name="processor_info">Procesor</string>
   <!-- RAM: Memory Info -->
   <string name="mem_info">RAM</string>
   <!-- Menu label for reset the battery stats -->
+  <string name="menu_stats_reset">Poništi statistiku</string>
   <!-- Reset stats confirmation dialog's message -->
+  <string name="reset_stats_msg">Statistika povijesti baterije bit će izbrisana</string>
   <!-- SystemUI restart prompt -->
   <string name="systemui_restart_title">UPOZORENJE</string>
   <string name="systemui_restart_message">Korisničko sučelje sustava ponovno će se pokrenuti kako bi se odabrane postavke mogle ispravno primijeniti.</string>
@@ -62,6 +72,8 @@
   <string name="unlock_quick_unlock_control_title">Brzo otključavanje</string>
   <string name="unlock_quick_unlock_control_summary">Automatski otključava uređaj kad unesete ispravan PIN ili lozinku</string>
   <!-- Double tap power button vibration -->
+  <string name="camera_dbl_tap_vib_title">Vibracija</string>
+  <string name="camera_dbl_tap_vib_summary">Vibriraj na dvostruki dodir</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Substratum slojevi</string>
   <string name="menu_show_substratum">Prikaži slojeve</string>
@@ -73,4 +85,13 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Aplikacije za teme iz nepoznatih izvora</string>
   <string name="force_authorize_substratum_packages_summary">Prisilno autorizirajte svaku aplikaciju za teme</string>
+  <!-- Development Settings summary-->
+  <string name="adb_enabled">ADB omogućen</string>
+  <string name="adb_disabled">ADB onemogućen</string>
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Brzo otključavanje</string>
+  <string name="unlock_quick_unlock_control_summary">Automatski otključava uređaj kad unesete ispravan PIN ili lozinku</string>
+  <!-- Quick unlock information -->
+  <string name="quick_unlock_alert_title">Upozorenje</string>
+  <string name="quick_unlock_alert_msg">Ova mogućnost će raditi samo ako koristiti 4-znamenkasti PIN, inače može doći do neželjenih učinaka na Vašem uređaju.</string>
 </resources>

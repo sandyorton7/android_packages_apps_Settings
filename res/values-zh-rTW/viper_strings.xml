@@ -15,20 +15,32 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="header_category_custom">Viper 附加選項</string>
+  <string name="venom_title">Venom</string>
+  <string name="venom_title_summary">ROM 特點及自定義</string>
+  <string name="substratum_title">Substratum</string>
+  <string name="substratum_summary">自定義裝置主題</string>
   <string name="magisk_title">Magisk 管理員</string>
   <string name="magisk_summary">Root 管理</string>
   <!-- About phone screen, ViperOs version -->
+  <string name="viper_version_title">ViperOS</string>
+  <string name="viper_version_default">未知的</string>
   <!-- About phone screen, processor info label [CHAR LIMIT=40] -->
+  <string name="processor_info">處理器</string>
   <!-- RAM: Memory Info -->
   <string name="mem_info">記憶體</string>
   <!-- Menu label for reset the battery stats -->
+  <string name="menu_stats_reset">重設統計數據</string>
   <!-- Reset stats confirmation dialog's message -->
+  <string name="reset_stats_msg">電池統計數據將會被重設</string>
   <!-- SystemUI restart prompt -->
   <string name="systemui_restart_title">警告</string>
   <string name="systemui_restart_message">將重新啟動使用者介面，以便可以正確套用所選設定。</string>
   <string name="restarting_ui">正在重新啟動使用者介面\u2026</string>
   <string name="print_restart">重新啟動</string>
   <!-- Doze pulse options -->
+  <string name="doze_settings">附加環境顯示設定</string>
+  <string name="doze_settings_summary">自定義環境顯示畫面</string>
   <string name="summary_doze_enabled">已啟用</string>
   <string name="summary_doze_disabled">已停用</string>
   <string name="doze_overwrite_value_title">覆寫預設值</string>
@@ -55,6 +67,8 @@
   <string name="doze_notification_color_invert_summary_off">通知不會被反轉。 用於黑暗的主題。</string>
   <string name="doze_notification_color_invert_summary_on">通知將反轉。 用於淡色/原始主題。</string>
   <!-- Double tap for doze -->
+  <string name="double_tap_wake_doze_title">休眠時輕觸兩次喚醒裝置</string>
+  <string name="double_tap_wake_doze_summary">需要輕觸兩次才能喚醒環境顯示畫面</string>
   <!-- Battery Status in doze screen -->
   <string name="ambient_display_show_battery_title">電池狀態</string>
   <string name="ambient_display_show_battery_summary">在充電時顯示電池電量指示器</string>
@@ -62,6 +76,8 @@
   <string name="unlock_quick_unlock_control_title">快速解鎖</string>
   <string name="unlock_quick_unlock_control_summary">當正確的 PIN 碼/密碼被輸入時自動解鎖</string>
   <!-- Double tap power button vibration -->
+  <string name="camera_dbl_tap_vib_title">震動</string>
+  <string name="camera_dbl_tap_vib_summary">雙擊時震動</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">底層重疊</string>
   <string name="menu_show_substratum">顯示重疊</string>
@@ -73,4 +89,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">允許來源不明的主題應用程式</string>
   <string name="force_authorize_substratum_packages_summary">強制授權每個主題應用程式</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">快速解鎖</string>
+  <string name="unlock_quick_unlock_control_summary">當正確的 PIN 碼/密碼被輸入時自動解鎖</string>
+  <!-- Quick unlock information -->
 </resources>

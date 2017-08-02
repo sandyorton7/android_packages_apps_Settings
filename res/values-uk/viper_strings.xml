@@ -15,10 +15,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="venom_title">Venom</string>
   <string name="magisk_title">Magisk менеджер</string>
   <string name="magisk_summary">Керування Root-доступом</string>
   <!-- About phone screen, ViperOs version -->
+  <string name="viper_version_title">ViperOS</string>
+  <string name="viper_version_default">Невідома</string>
   <!-- About phone screen, processor info label [CHAR LIMIT=40] -->
+  <string name="processor_info">Процесор</string>
   <!-- RAM: Memory Info -->
   <string name="mem_info">Оперативна Пам\'ять</string>
   <!-- Menu label for reset the battery stats -->
@@ -62,6 +66,8 @@
   <string name="unlock_quick_unlock_control_title">Швидке розблокування</string>
   <string name="unlock_quick_unlock_control_summary">Автоматичне розблокування при введенні правильного пароля чи PIN-коду</string>
   <!-- Double tap power button vibration -->
+  <string name="camera_dbl_tap_vib_title">Дрижання</string>
+  <string name="camera_dbl_tap_vib_summary">Дрижання при подвійному дотику</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Шари Substratum</string>
   <string name="menu_show_substratum">Відображати шари</string>
@@ -73,4 +79,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Дозволити теми із невідомих джерел</string>
   <string name="force_authorize_substratum_packages_summary">Примусово авторизувати кожну тему</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Швидке розблокування</string>
+  <string name="unlock_quick_unlock_control_summary">Автоматичне розблокування при введенні правильного пароля чи PIN-коду</string>
+  <!-- Quick unlock information -->
 </resources>

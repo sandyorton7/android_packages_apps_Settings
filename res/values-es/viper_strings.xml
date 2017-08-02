@@ -32,7 +32,7 @@
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">Restablecer estadísticas</string>
   <!-- Reset stats confirmation dialog's message -->
-  <string name="reset_stats_msg">Las estadísticas de la batería van a reiniciarse</string>
+  <string name="reset_stats_msg">Las estadísticas de la batería van a restablecerse</string>
   <!-- SystemUI restart prompt -->
   <string name="systemui_restart_title">ADVERTENCIA</string>
   <string name="systemui_restart_message">SystemUI se reiniciará para que se pueda aplicar la configuración seleccionada correctamente.</string>
@@ -89,4 +89,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Permitir temas de origen desconocido</string>
   <string name="force_authorize_substratum_packages_summary">Permitir aplicar tema a aplicaciones de fuentes desconocidas</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
+  <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN o contraseña correctos</string>
+  <!-- Quick unlock information -->
 </resources>

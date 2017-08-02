@@ -73,4 +73,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Installatie van thema\'s uit onbekende bronnen toestaan</string>
   <string name="force_authorize_substratum_packages_summary">Geforceerd toestaan van elke thema applicatie</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Snel ontgrendelen</string>
+  <string name="unlock_quick_unlock_control_summary">Ontgrendel automatisch wanneer de juiste pincode of wachtwoord is ingevoerd</string>
+  <!-- Quick unlock information -->
 </resources>

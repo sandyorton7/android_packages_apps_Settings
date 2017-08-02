@@ -20,7 +20,7 @@
   <string name="venom_title_summary">Personalizar o dispositivo</string>
   <string name="substratum_title">Substratum</string>
   <string name="substratum_summary">Personalizar o tema do dispositivo</string>
-  <string name="magisk_title">Gestor do Magisk</string>
+  <string name="magisk_title">Configurações Magisk</string>
   <string name="magisk_summary">Gerenciamento de superusuário</string>
   <!-- About phone screen, ViperOs version -->
   <string name="viper_version_title">ViperOS</string>
@@ -89,4 +89,13 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Permitir aplicativos de temas de fontes desconhecidas</string>
   <string name="force_authorize_substratum_packages_summary">Forçar autorização de cada aplicativo de tema</string>
+  <!-- Development Settings summary-->
+  <string name="adb_enabled">Depuração habilitada</string>
+  <string name="adb_disabled">Depuração desabilitada</string>
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
+  <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando o PIN/Senha correto é inserido</string>
+  <!-- Quick unlock information -->
+  <string name="quick_unlock_alert_title">Alerta</string>
+  <string name="quick_unlock_alert_msg">Esse recurso só irá funcionar se você usar um PIN de 4 dígitos, caso contrário poderá ocorrer efeitos indesejados com seu dispositivo.</string>
 </resources>

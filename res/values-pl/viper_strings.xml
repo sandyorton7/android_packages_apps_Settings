@@ -15,9 +15,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
-  <string name="header_category_custom">Viper dodatki</string>
+  <string name="header_category_custom">Dodatki Viper</string>
   <string name="venom_title">Venom</string>
-  <string name="venom_title_summary">Funkcje &amp; dostosowanie</string>
+  <string name="venom_title_summary">Funkcje &amp; dostosowania</string>
   <string name="substratum_title">Substratum</string>
   <string name="substratum_summary">Dostosuj motyw urządzenia</string>
   <string name="magisk_title">Menedżer Magisk</string>
@@ -89,4 +89,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Zezwalaj na instalowanie motywów z nieznanych źródeł</string>
   <string name="force_authorize_substratum_packages_summary">Wymuś autoryzację każdego motywu</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Szybkie odblokowanie</string>
+  <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie, gdy wprowadzony zostanie poprawny PIN/hasło</string>
+  <!-- Quick unlock information -->
 </resources>

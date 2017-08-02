@@ -15,6 +15,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="header_category_custom">תוספות Viper</string>
   <!-- About phone screen, ViperOs version -->
   <!-- About phone screen, processor info label [CHAR LIMIT=40] -->
   <!-- RAM: Memory Info -->
@@ -24,9 +25,18 @@
   <!-- Doze pulse options -->
   <!-- Double tap for doze -->
   <!-- Battery Status in doze screen -->
+  <string name="ambient_display_show_battery_title">מצב סוללה</string>
   <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">פתיחה מהירה</string>
+  <string name="unlock_quick_unlock_control_summary">פתח אוטומטית כאשר הסיסמה/קוד נכון מוכנס</string>
   <!-- Double tap power button vibration -->
+  <string name="camera_dbl_tap_vib_title">רטט</string>
   <!-- Manage applications: show substratum overlays -->
   <!-- Manage applications: show substratum icon overlays -->
   <!-- Force authorize substratum packages -->
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">פתיחה מהירה</string>
+  <string name="unlock_quick_unlock_control_summary">פתח אוטומטית כאשר הסיסמה/קוד נכון מוכנס</string>
+  <!-- Quick unlock information -->
 </resources>

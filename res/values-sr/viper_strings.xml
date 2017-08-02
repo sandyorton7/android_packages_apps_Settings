@@ -63,4 +63,7 @@
   <string name="menu_show_substratum_icons">Прикажи слојеве икона</string>
   <string name="menu_hide_substratum_icons">Сакриј слојеве икона</string>
   <!-- Force authorize substratum packages -->
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <!-- Quick unlock information -->
 </resources>

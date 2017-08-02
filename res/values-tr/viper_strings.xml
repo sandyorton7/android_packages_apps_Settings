@@ -74,6 +74,7 @@
   <string name="unlock_quick_unlock_control_title">Hızlı kilit açma</string>
   <string name="unlock_quick_unlock_control_summary">Doğru PIN/şifre girildiğinde kilit otomatik açılır</string>
   <!-- Double tap power button vibration -->
+  <string name="camera_dbl_tap_vib_title">Titreşim</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Substratum temaları</string>
   <string name="menu_show_substratum">Temaları göster</string>
@@ -85,4 +86,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Bilinmeyen kaynaklardan tema uygulamalarına izin ver</string>
   <string name="force_authorize_substratum_packages_summary">Her tema uygulamasını zorla yetkilendir</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Hızlı kilit açma</string>
+  <string name="unlock_quick_unlock_control_summary">Doğru PIN/şifre girildiğinde kilit otomatik açılır</string>
+  <!-- Quick unlock information -->
 </resources>

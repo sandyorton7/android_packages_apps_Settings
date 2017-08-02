@@ -73,4 +73,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">允许未知来源的主题应用</string>
   <string name="force_authorize_substratum_packages_summary">强制授权所有主题应用</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">快速解锁</string>
+  <string name="unlock_quick_unlock_control_summary">当输入正确的 PIN 码或密码后自动解锁</string>
+  <!-- Quick unlock information -->
 </resources>

@@ -87,4 +87,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Permitir aplicações de temas de fontes desconhecidas</string>
   <string name="force_authorize_substratum_packages_summary">Forçar autorização de todas as aplicações de temas</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
+  <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando o PIN ou Palavra-passe correta é inserida</string>
+  <!-- Quick unlock information -->
 </resources>

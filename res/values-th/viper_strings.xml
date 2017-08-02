@@ -15,6 +15,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="venom_title">Venom</string>
   <!-- About phone screen, ViperOs version -->
   <!-- About phone screen, processor info label [CHAR LIMIT=40] -->
   <!-- RAM: Memory Info -->
@@ -56,4 +57,9 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">อนุญาตทุก ๆ รูปแบบ</string>
   <string name="force_authorize_substratum_packages_summary">อนุญาตให้แอปพลิเคชันธีมจากแหล่งที่ไม่รู้จัก</string>
+  <!-- Development Settings summary-->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">ปลดล็อคแบบรวดเร็ว</string>
+  <string name="unlock_quick_unlock_control_summary">ปลดล็อกโดยอัตโนมัติเมื่อป้อนรหัสผ่านที่ถูกต้อง</string>
+  <!-- Quick unlock information -->
 </resources>
