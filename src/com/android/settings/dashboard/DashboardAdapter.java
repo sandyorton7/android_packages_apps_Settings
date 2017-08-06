@@ -45,6 +45,9 @@ import com.android.settingslib.SuggestionParser;
 import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.Tile;
 import android.provider.Settings;
+import android.app.UiModeManager;
+
+import com.viper.colorengine.utils.ColorEngineUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -258,6 +261,14 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
                                 showRemoveOption(v, suggestion);
                             }
                         });
+
+                UiModeManager uiManager = (UiModeManager) mContext.getSystemService(Context.UI_MODE_SERVICE);
+                int nightMode = uiManager.getNightMode();
+
+                if (!ColorEngineUtils.isDefaultNightMode(nightMode)) {
+                    holder.icon.setColorFilter(ColorEngineUtils.getAccentColor(nightMode), Mode.SRC_ATOP);
+                }
+
                 break;
             case R.layout.see_all:
                 onBindSeeAll(holder);
