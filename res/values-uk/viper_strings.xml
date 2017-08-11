@@ -84,4 +84,5 @@
   <string name="unlock_quick_unlock_control_title">Швидке розблокування</string>
   <string name="unlock_quick_unlock_control_summary">Автоматичне розблокування при введенні правильного пароля чи PIN-коду</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

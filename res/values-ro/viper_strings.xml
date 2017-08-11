@@ -70,4 +70,5 @@
   <string name="unlock_quick_unlock_control_title">Deblocare rapidă</string>
   <string name="unlock_quick_unlock_control_summary">Deblochează automat când se introduce corect PIN/parolă</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

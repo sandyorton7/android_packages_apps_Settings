@@ -78,4 +78,5 @@
   <string name="unlock_quick_unlock_control_title">Γρήγορο ξεκλειδωμα</string>
   <string name="unlock_quick_unlock_control_summary">Αυτόματο ξεκλείδωμα όταν δωθεί το σωστό PIN ή ο σωστός κωδικός</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

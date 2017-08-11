@@ -79,4 +79,5 @@
   <string name="unlock_quick_unlock_control_title">Déverrouillage rapide</string>
   <string name="unlock_quick_unlock_control_summary">Déverrouiller automatiquement lorsque le bon code PIN/mot de passe est saisi</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

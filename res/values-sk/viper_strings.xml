@@ -90,8 +90,15 @@
   <string name="force_authorize_substratum_packages_title">Povoliť inštaláciu tém z neznámych zdrojov</string>
   <string name="force_authorize_substratum_packages_summary">Vyžadovať povolenie pre každú tému</string>
   <!-- Development Settings summary-->
+  <string name="adb_enabled">Ladenie je povolené</string>
+  <string name="adb_disabled">Ladenie je zakázané</string>
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Rýchle odomknutie</string>
   <string name="unlock_quick_unlock_control_summary">Odomknúť automaticky po zadaní správneho PIN kódu alebo hesla</string>
   <!-- Quick unlock information -->
+  <string name="quick_unlock_alert_title">Upozornenie</string>
+  <string name="quick_unlock_alert_msg">Táto funkcia bude fungovať len v prípade, že používate štvormiestny kód PIN, inak sa môže objaviť nežiaduce správanie zariadenia.</string>
+  <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Snímka obrazovky tromi prstami</string>
+  <string name="three_finger_screenshot_summary">Snímka obrazovky prejdením dolu tromi prstami</string>
 </resources>

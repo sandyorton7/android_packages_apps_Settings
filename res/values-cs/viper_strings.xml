@@ -90,8 +90,15 @@
   <string name="force_authorize_substratum_packages_title">Povolit instalaci motivů z neznámých zdrojů</string>
   <string name="force_authorize_substratum_packages_summary">Vyžadovat povolení pro každý motiv</string>
   <!-- Development Settings summary-->
+  <string name="adb_enabled">ADB povoleno</string>
+  <string name="adb_disabled">ADB zakázáno</string>
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Rychlé odemknutí</string>
   <string name="unlock_quick_unlock_control_summary">Automatické odemknutí pokud je zadán správný PIN/heslo</string>
   <!-- Quick unlock information -->
+  <string name="quick_unlock_alert_title">Varování</string>
+  <string name="quick_unlock_alert_msg">Tato funkce bude fungovat pouze v případě, že používáte čtyřmístný kód PIN, jinak se může objevit nežádoucí chování zařízení.</string>
+  <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Snímek obrazovky třemi prsty</string>
+  <string name="three_finger_screenshot_summary">Snímek obrazovky přejetím dolů třemi prsty</string>
 </resources>

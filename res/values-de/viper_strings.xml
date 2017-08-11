@@ -19,11 +19,16 @@
   <string name="magisk_title">Magisk Manager</string>
   <string name="magisk_summary">Root-Verwaltung</string>
   <!-- About phone screen, ViperOs version -->
+  <string name="viper_version_title">ViperOS</string>
+  <string name="viper_version_default">Unbekannt</string>
   <!-- About phone screen, processor info label [CHAR LIMIT=40] -->
+  <string name="processor_info">Prozessor</string>
   <!-- RAM: Memory Info -->
   <string name="mem_info">RAM</string>
   <!-- Menu label for reset the battery stats -->
+  <string name="menu_stats_reset">Statistiken zurücksetzen</string>
   <!-- Reset stats confirmation dialog's message -->
+  <string name="reset_stats_msg">Akkustatistiken werden zurückgesetzt</string>
   <!-- SystemUI restart prompt -->
   <string name="systemui_restart_title">WARNUNG</string>
   <string name="systemui_restart_message">Die Benutzeroberfläche wird neu gestartet, damit die gewählten Einstellungen korrekt angewandt werden können.</string>
@@ -75,8 +80,11 @@
   <string name="force_authorize_substratum_packages_title">Erlaube Theme Apps von unbekannten Quellen</string>
   <string name="force_authorize_substratum_packages_summary">Zwinge eine Authorisierung aller Theme Apps</string>
   <!-- Development Settings summary-->
+  <string name="adb_enabled">ADB aktiviert</string>
+  <string name="adb_disabled">ADB deaktiviert</string>
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
   <string name="unlock_quick_unlock_control_summary">Automatisch entsperren, sobald die PIN-/Passwort-Anfrage korrekt beantwortet wurde</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

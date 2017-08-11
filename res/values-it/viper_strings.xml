@@ -90,8 +90,15 @@
   <string name="force_authorize_substratum_packages_title">Consenti l\'installazione di temi da fonti sconosciute</string>
   <string name="force_authorize_substratum_packages_summary">Forza l\'autorizzazione ad ogni applicazione del tema</string>
   <!-- Development Settings summary-->
+  <string name="adb_enabled">ADB abilitato</string>
+  <string name="adb_disabled">ADB disabilitato</string>
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Sblocco veloce</string>
   <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando vengono inseriti il PIN o la password corretti</string>
   <!-- Quick unlock information -->
+  <string name="quick_unlock_alert_title">Avviso</string>
+  <string name="quick_unlock_alert_msg">Questa caratteristica funziona solo se si utilizza il PIN di 4 cifre, altrimenti potrebbero verificarsi effetti indesiderati con il dispositivo.</string>
+  <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Screenshot con tre dita</string>
+  <string name="three_finger_screenshot_summary">Scorri verso il basso con tre dita per effettuare uno screenshot</string>
 </resources>

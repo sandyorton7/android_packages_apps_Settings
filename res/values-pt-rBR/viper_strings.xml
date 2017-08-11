@@ -98,4 +98,7 @@
   <!-- Quick unlock information -->
   <string name="quick_unlock_alert_title">Alerta</string>
   <string name="quick_unlock_alert_msg">Esse recurso só irá funcionar se você usar um PIN de 4 dígitos, caso contrário poderá ocorrer efeitos indesejados com seu dispositivo.</string>
+  <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Captura de tela com 3 dedos</string>
+  <string name="three_finger_screenshot_summary">Tirar uma captura de tela ao deslizar três dedos</string>
 </resources>

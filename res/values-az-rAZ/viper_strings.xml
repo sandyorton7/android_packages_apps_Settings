@@ -70,4 +70,5 @@
   <string name="unlock_quick_unlock_control_title">Cəld kilidi aç</string>
   <string name="unlock_quick_unlock_control_summary">Düzgün PIN/şifrə daxil edilərsə kilidi avtomatik aç</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

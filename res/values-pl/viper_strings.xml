@@ -94,4 +94,5 @@
   <string name="unlock_quick_unlock_control_title">Szybkie odblokowanie</string>
   <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie, gdy wprowadzony zostanie poprawny PIN/hasło</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

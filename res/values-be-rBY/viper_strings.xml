@@ -90,8 +90,12 @@
   <string name="force_authorize_substratum_packages_title">Дазволіць усталёўку тэм з невядомых крыніц</string>
   <string name="force_authorize_substratum_packages_summary">Прымусова запытваць дазвол для кожнай тэмы</string>
   <!-- Development Settings summary-->
+  <string name="adb_enabled">Адладка ўключана</string>
+  <string name="adb_disabled">Адладка адключана</string>
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Хуткая разблакоўка</string>
   <string name="unlock_quick_unlock_control_summary">Аўтаматычная разблакоўка пры ўводзе правільнага пароля або PIN-кода</string>
   <!-- Quick unlock information -->
+  <string name="quick_unlock_alert_msg">Гэтая функцыя будзе працаваць толькі калі вы карыстаецеся 4-значны PIN-код, у адваротным выпадку могуць узнікаць непажаданыя памылкі з вашай прыладай.</string>
+  <!-- Three finger screenshot -->
 </resources>

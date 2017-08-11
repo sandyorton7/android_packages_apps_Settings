@@ -94,4 +94,5 @@
   <string name="unlock_quick_unlock_control_title">快速解鎖</string>
   <string name="unlock_quick_unlock_control_summary">當正確的 PIN 碼/密碼被輸入時自動解鎖</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

@@ -15,11 +15,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
-  <string name="header_category_custom">Viper дополнения</string>
+  <string name="header_category_custom">Дополнения Viper</string>
   <string name="venom_title">Venom</string>
   <string name="venom_title_summary">Функции и настройки ROM</string>
   <string name="substratum_title">Substratum</string>
-  <string name="substratum_summary">Настроить тему устройства</string>
+  <string name="substratum_summary">Настройка темы</string>
   <string name="magisk_title">Менеджер Magisk</string>
   <string name="magisk_summary">Управление правами суперпользователя</string>
   <!-- About phone screen, ViperOs version -->
@@ -90,8 +90,15 @@
   <string name="force_authorize_substratum_packages_title">Разрешить установку тем из неизвестных источников</string>
   <string name="force_authorize_substratum_packages_summary">Принудительно запрашивать разрешения для каждой темы</string>
   <!-- Development Settings summary-->
+  <string name="adb_enabled">Отладка включена</string>
+  <string name="adb_disabled">Отладка отключена</string>
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
   <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически, когда введён корректный PIN-код/пароль</string>
   <!-- Quick unlock information -->
+  <string name="quick_unlock_alert_title">Предупреждение</string>
+  <string name="quick_unlock_alert_msg">Эта функция будет работать только если вы используете 4-значный PIN-код, в противном случае могут возникать ошибки.</string>
+  <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Скриншот тремя пальцами</string>
+  <string name="three_finger_screenshot_summary">Снятие скриншота свайпом вниз тремя пальцами</string>
 </resources>

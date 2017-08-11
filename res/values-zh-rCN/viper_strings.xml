@@ -78,4 +78,5 @@
   <string name="unlock_quick_unlock_control_title">快速解锁</string>
   <string name="unlock_quick_unlock_control_summary">当输入正确的 PIN 码或密码后自动解锁</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

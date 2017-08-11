@@ -78,4 +78,5 @@
   <string name="unlock_quick_unlock_control_title">Snel ontgrendelen</string>
   <string name="unlock_quick_unlock_control_summary">Ontgrendel automatisch wanneer de juiste pincode of wachtwoord is ingevoerd</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

@@ -94,4 +94,5 @@
   <!-- Quick unlock information -->
   <string name="quick_unlock_alert_title">Upozorenje</string>
   <string name="quick_unlock_alert_msg">Ova mogućnost će raditi samo ako koristiti 4-znamenkasti PIN, inače može doći do neželjenih učinaka na Vašem uređaju.</string>
+  <!-- Three finger screenshot -->
 </resources>

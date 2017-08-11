@@ -78,4 +78,5 @@
   <string name="unlock_quick_unlock_control_title">빠른 잠금 해제</string>
   <string name="unlock_quick_unlock_control_summary">PIN/비밀번호를 올바르게 입력하면 자동으로 잠금을 해제합니다</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

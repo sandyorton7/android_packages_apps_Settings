@@ -15,21 +15,83 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="header_category_custom">افزوده‌های Viper</string>
+  <string name="venom_title">Venom</string>
+  <string name="venom_title_summary">ویژگی‌های رام &amp; سفارشی سازی</string>
+  <string name="substratum_title">Substratum</string>
+  <string name="substratum_summary">سفارشی سازی تم دستگاه</string>
+  <string name="magisk_title">Magisk Manager</string>
+  <string name="magisk_summary">مدیریت روت</string>
   <!-- About phone screen, ViperOs version -->
+  <string name="viper_version_title">ViperOS</string>
+  <string name="viper_version_default">ناشناخته</string>
   <!-- About phone screen, processor info label [CHAR LIMIT=40] -->
+  <string name="processor_info">پردازشگر</string>
   <!-- RAM: Memory Info -->
+  <string name="mem_info">رم</string>
   <!-- Menu label for reset the battery stats -->
+  <string name="menu_stats_reset">آمار تنظیم مجدد</string>
   <!-- Reset stats confirmation dialog's message -->
+  <string name="reset_stats_msg">آمار تاریخچه باتری در حال تنظیم مجدد شدن</string>
   <!-- SystemUI restart prompt -->
+  <string name="systemui_restart_title">هشدار</string>
+  <string name="systemui_restart_message">رابط کاربری سیستم دوباره راه اندازی خواهد شد تا تنظیمات انتخاب شده به درستی اعمال شوند.</string>
+  <string name="restarting_ui">راه اندازی مجدد رابط کاربری\u2026</string>
+  <string name="print_restart">راه اندازی مجدد</string>
   <!-- Doze pulse options -->
+  <string name="doze_settings">تنظیمات اضافی محیط صفحه نمایش</string>
+  <string name="doze_settings_summary">سفارشی کردن پالس صفحه نمایش</string>
+  <string name="summary_doze_enabled">فعال</string>
+  <string name="summary_doze_disabled">غیر فعال</string>
+  <string name="doze_overwrite_value_title">بازنویسی پیشفرضها</string>
+  <string name="doze_overwrite_value_summary">اجازه دادن به لغو مقادیر پیش فرض با پیکربندی کاربر</string>
+  <string name="doze_pulse_title">تنظیمات قابل تنظیم کاربر</string>
+  <string name="doze_pulse_duration_in_title">محو شدن</string>
+  <string name="doze_pulse_duration_visible_title">مدت زمان قابل مشاهده</string>
+  <string name="doze_pulse_duration_out_title">از بین بردن</string>
+  <string name="doze_brightness_level_title">سطح روشنایی</string>
+  <string name="onehundred_ms">۱۰۰ میلی ثانیه</string>
+  <string name="twofifty_ms">۲۵۰ میلی ثانیه</string>
+  <string name="fivehundred_ms_default">۵۰۰ میلی ثانیه (به طور پیش فرض)</string>
+  <string name="sevenfifty_ms">۷۵۰ میلی ثانیه</string>
+  <string name="one_second">۱ ثانیه</string>
+  <string name="onehalf_second">۱.۵ ثانیه</string>
+  <string name="two_second">۲ ثانیه</string>
+  <string name="twohalf_second">۲.۵ ثانیه</string>
+  <string name="three_second_default">۳ ثانیه (به طور پیش فرض)</string>
+  <string name="threehalf_second">۳.۵ ثانیه</string>
+  <string name="four_second">۴ ثانیه</string>
+  <string name="fourhalf_second">۴.۵ ثانیه</string>
+  <string name="five_second">۵ ثانیه</string>
+  <string name="doze_notification_color_invert_title">اعلان معکوس</string>
+  <string name="doze_notification_color_invert_summary_off">اعلان ها غلط نخواهند شد. برای تم های تاریک استفاده کنید.</string>
+  <string name="doze_notification_color_invert_summary_on">اعلان ها متوقف خواهند شد. برای تم روشن/اصلی استفاده کنید.</string>
   <!-- Double tap for doze -->
+  <string name="double_tap_wake_doze_title">دو بار ضربه بزنید تا حالت دوز فعال شود</string>
+  <string name="double_tap_wake_doze_summary">نیاز به دو بار ضربه زدن است تا دستگاه بر روی صفحه دوز پالس بیدار شود</string>
   <!-- Battery Status in doze screen -->
+  <string name="ambient_display_show_battery_title">وضعیت باتری</string>
+  <string name="ambient_display_show_battery_summary">نمایش نشانگر باتری در طول پالس</string>
   <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">بازکردن سریع</string>
+  <string name="unlock_quick_unlock_control_summary">هنگامی که پین/رمز عبور درست وارد شود، به صورت خودکار باز شود</string>
   <!-- Double tap power button vibration -->
+  <string name="camera_dbl_tap_vib_title">لرزش</string>
+  <string name="camera_dbl_tap_vib_summary">لرزش در دو بار ضربه زدن</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">همپوشانی‌های Substratum</string>
+  <string name="menu_show_substratum">نمایش همپوشانی‌ها</string>
+  <string name="menu_hide_substratum">مخفی کردن همپوشانی‌ها</string>
   <!-- Manage applications: show substratum icon overlays -->
   <!-- Force authorize substratum packages -->
   <!-- Development Settings summary-->
+  <string name="adb_enabled">ADB فعال شده است</string>
+  <string name="adb_disabled">ADB غیر فعال است</string>
   <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">بازکردن سریع</string>
+  <string name="unlock_quick_unlock_control_summary">هنگامی که پین/رمز عبور درست وارد شود، به صورت خودکار باز شود</string>
   <!-- Quick unlock information -->
+  <string name="quick_unlock_alert_title">هشدار</string>
+  <string name="quick_unlock_alert_msg">این ویژگی فقط در صورتی استفاده می شود که از پین 4 رقمی استفاده کنید، در غیر این صورت ممکن است اثرات ناخواسته با دستگاه شما رخ دهد.</string>
+  <!-- Three finger screenshot -->
 </resources>

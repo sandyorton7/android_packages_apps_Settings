@@ -91,4 +91,5 @@
   <string name="unlock_quick_unlock_control_title">Hızlı kilit açma</string>
   <string name="unlock_quick_unlock_control_summary">Doğru PIN/şifre girildiğinde kilit otomatik açılır</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

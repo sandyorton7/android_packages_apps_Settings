@@ -78,4 +78,5 @@
   <string name="unlock_quick_unlock_control_title">الفك السريع</string>
   <string name="unlock_quick_unlock_control_summary">فُك تلقائياً عند إدخال الرمز/كلمة المرور الصحيحة</string>
   <!-- Quick unlock information -->
+  <!-- Three finger screenshot -->
 </resources>

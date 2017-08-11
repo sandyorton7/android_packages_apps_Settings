@@ -15,14 +15,37 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General strings -->
+  <string name="header_category_custom">Viper เพิ่มเติม</string>
   <string name="venom_title">Venom</string>
+  <string name="venom_title_summary">คุณสมบัติรอม &amp; กำหนดเอง</string>
+  <string name="substratum_title">Substratum</string>
+  <string name="substratum_summary">กำหนดรูปแบบของอุปกรณ์</string>
+  <string name="magisk_title">การจัดการ Magisk</string>
+  <string name="magisk_summary">การจัดการ Root</string>
   <!-- About phone screen, ViperOs version -->
+  <string name="viper_version_title">ViperOS</string>
+  <string name="viper_version_default">ไม่ทราบ</string>
   <!-- About phone screen, processor info label [CHAR LIMIT=40] -->
+  <string name="processor_info">หน่วยประมวลผล</string>
   <!-- RAM: Memory Info -->
+  <string name="mem_info">แรม</string>
   <!-- Menu label for reset the battery stats -->
+  <string name="menu_stats_reset">รีเซ็ตสถิติ</string>
   <!-- Reset stats confirmation dialog's message -->
+  <string name="reset_stats_msg">สถิติประวัติแบตเตอรี่จะถูกรีเซ็ต</string>
   <!-- SystemUI restart prompt -->
+  <string name="systemui_restart_title">คำเตือน!</string>
+  <string name="systemui_restart_message">SystemUI จะเริ่มต้นใหม่เพื่อให้การตั้งค่าสามารถใช้ได้อย่างถูกต้อง</string>
+  <string name="restarting_ui">กำลังเริ่มระบบใหม่ UI\u2026</string>
+  <string name="print_restart">เริ่มระบบใหม่</string>
   <!-- Doze pulse options -->
+  <string name="doze_settings">ตั้งค่าสีการแสดงเพิ่มเติม</string>
+  <string name="doze_settings_summary">ปรับแต่งpulse screen</string>
+  <string name="summary_doze_enabled">เปิดใช้งาน</string>
+  <string name="summary_doze_disabled">ปิด​ใช้​งาน</string>
+  <string name="doze_overwrite_value_title">เขียนทับค่าเริ่มต้น</string>
+  <string name="doze_overwrite_value_summary">อนุญาตให้แทนที่ค่าเริ่มต้นด้วยการกำหนดค่าผู้ใช้</string>
+  <string name="doze_pulse_title">ผู้ใช้สามารถกำหนดค่าการตั้งค่า</string>
   <string name="doze_pulse_duration_in_title">ค่อย ๆ ปรากฏ</string>
   <string name="doze_pulse_duration_visible_title">ระยะเวลาที่มองเห็นได้</string>
   <string name="doze_pulse_duration_out_title">ค่อยๆออก</string>
@@ -40,6 +63,9 @@
   <string name="four_second">4 วินาที</string>
   <string name="fourhalf_second">4.5 วินาที</string>
   <string name="five_second">5 วินาที</string>
+  <string name="doze_notification_color_invert_title">กลับสีการแจ้งเตือน</string>
+  <string name="doze_notification_color_invert_summary_off">การแจ้งเตือนจะไม่กลับสี ใช้สำหรับธีมสีเข้ม</string>
+  <string name="doze_notification_color_invert_summary_on">การแจ้งเตือนจะถูกกลับสี ใช้ชุดรูปแบบสว่าง/สต็อก</string>
   <!-- Double tap for doze -->
   <string name="double_tap_wake_doze_title">แตะสองครั้งเพื่อเปิดจอ</string>
   <string name="double_tap_wake_doze_summary">ต้องแตะสองครั้งเพื่อปลุกอุปกรณ์จากการประหยัดพลังงานเบื้องหลัง</string>
@@ -53,13 +79,24 @@
   <string name="camera_dbl_tap_vib_title">การสั่น</string>
   <string name="camera_dbl_tap_vib_summary">สั่นเมื่อแตะสองครั้ง</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum overlays</string>
+  <string name="menu_show_substratum">แสดง overlays</string>
+  <string name="menu_hide_substratum">ซ่อน overlays</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum icon overlays</string>
+  <string name="menu_show_substratum_icons">แสดง overlays</string>
+  <string name="menu_hide_substratum_icons">ซ่อน overlays</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">อนุญาตทุก ๆ รูปแบบ</string>
   <string name="force_authorize_substratum_packages_summary">อนุญาตให้แอปพลิเคชันธีมจากแหล่งที่ไม่รู้จัก</string>
   <!-- Development Settings summary-->
+  <string name="adb_enabled">เปิดใช้งาน ADB</string>
+  <string name="adb_disabled">ปิดใช้งาน ADB</string>
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">ปลดล็อคแบบรวดเร็ว</string>
   <string name="unlock_quick_unlock_control_summary">ปลดล็อกโดยอัตโนมัติเมื่อป้อนรหัสผ่านที่ถูกต้อง</string>
   <!-- Quick unlock information -->
+  <string name="quick_unlock_alert_title">การแจ้งเตือน</string>
+  <string name="quick_unlock_alert_msg">คุณลักษณะนี้จะทำงานเฉพาะคุณใช้ PIN 4 หลัก มิฉะนั้น ผลที่ไม่พึงประสงค์ที่อาจเกิดขึ้นกับอุปกรณ์ของคุณ</string>
+  <!-- Three finger screenshot -->
 </resources>
