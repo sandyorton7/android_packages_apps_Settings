@@ -21,4 +21,8 @@
     <string name="rom_version_title">ViperOS Version</string>
     <string name="build_date">Build date</string>
 
+    <!-- Venom Settings -->
+    <string name="venom_settings_title">Venom</string>
+    <string name="venom_settings_summary">ROM features &amp; customization</string>
+
 </resources>
