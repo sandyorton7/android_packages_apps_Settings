@@ -37,4 +37,6 @@
     <string name="viper_update_settings_title">Atualizações da ViperOS</string>
     <string name="viper_update_settings_summary">Encontre novas atualizações</string>
 
+    <string name="show_dev_already_enabled">Não há necessidade, as configurações de desenvolvimento estão ativadas por padrão.</string>
+
 </resources>
