@@ -25,4 +25,8 @@
     <string name="venom_settings_title">Venom</string>
     <string name="venom_settings_summary">ROM features &amp; customization</string>
 
+    <!-- Battery Styles -->
+    <string name="battery_image">Battery image</string>
+    <string name="battery_image_description">Show battery image in status bar</string>
+
 </resources>

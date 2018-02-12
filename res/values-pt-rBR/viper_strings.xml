@@ -25,4 +25,8 @@
     <string name="venom_settings_title">Venom</string>
     <string name="venom_settings_summary">Personalizar o dispositivo</string>
 
+    <!-- Battery Styles -->
+    <string name="battery_image">Imagem da bateria</string>
+    <string name="battery_image_description">Mostrar imagem da bateria na barra de status</string>
+
 </resources>
