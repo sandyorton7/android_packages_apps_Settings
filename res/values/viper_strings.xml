@@ -25,4 +25,8 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">build date, build info</string>
 
+    <!-- Venom Settings -->
+    <string name="venom_settings_title">Venom</string>
+    <string name="venom_settings_summary">ROM features &amp; customization</string>
+
 </resources>

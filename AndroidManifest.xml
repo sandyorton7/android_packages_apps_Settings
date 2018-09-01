@@ -3351,5 +3351,23 @@
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <!-- Start of our manifest entries -->
+
+        <!-- Venom -->
+        <activity android:name=".Settings$VenomActivity"
+                  android:label="@string/venom_settings_title"
+                  android:icon="@drawable/ic_homepage_venom">
+            <intent-filter android:priority="10">
+                <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.homepage"/>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.viper.venom.VenomSettings"/>
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/venom_settings_summary"/>
+        </activity>
+
     </application>
 </manifest>
