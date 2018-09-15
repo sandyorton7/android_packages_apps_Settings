@@ -18,6 +18,15 @@
         xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
         android:title="@string/about_settings">
 
+        <!-- ViperOS Banner -->
+        <PreferenceScreen android:key="toxyc_header"
+                          android:enabled="false"
+                          android:layout="@layout/about_viper_header" />
+
+        <Preference android:key="device_dialog"
+                    android:title="@string/os_informations"
+                    android:summary="@string/os_informations_summary" />
+
         <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
                     android:title="@string/additional_system_update_settings_list_item_title">
@@ -45,18 +54,6 @@
             <intent android:action="android.settings.SHOW_MANUAL" />
         </Preference>
 
-        <!-- Legal Information -->
-        <Preference
-                android:key="legal_container"
-                android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
-
-        <Preference
-                android:key="regulatory_info"
-                android:title="@string/regulatory_labels">
-            <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
-        </Preference>
-
         <Preference
                 android:key="safety_info"
                 android:title="@string/safety_and_regulatory_info">
@@ -71,36 +68,17 @@
         <org.lineageos.internal.lineageparts.LineagePartsPreference
                 android:key="contributors" /> -->
 
-        <!-- Device hardware model -->
-        <Preference
-                android:key="device_model"
-                android:title="@string/model_info"
-                android:summary="@string/summary_placeholder"/>
-
-        <!-- Device firmware version -->
-        <Preference android:key="firmware_version"
-                android:title="@string/firmware_version"
-                android:summary="@string/summary_placeholder"/>
-
-        <!-- LineageOS version -->
+        <!-- LineageOS version
         <org.lineageos.internal.preference.deviceinfo.LineageVersionPreference
-                android:key="lineage_version" />
+                android:key="lineage_version" /> -->
 
         <!-- LineageOS API version
         <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionPreference
                 android:key="lineage_api_level" /> -->
 
-        <!-- Security patch level -->
-        <Preference android:key="security_patch"
-                android:title="@string/security_patch"
-                android:summary="@string/summary_placeholder">
-                <intent android:action="android.intent.action.VIEW"
-                        android:data="https://source.android.com/security/bulletin/" />
-        </Preference>
-
-        <!-- Vendor security patch level -->
+        <!-- Vendor security patch level
         <org.lineageos.internal.preference.deviceinfo.LineageVendorSecurityPatchPreference
-                android:key="lineage_vendor_security_patch"/>
+                android:key="lineage_vendor_security_patch"/> -->
 
         <!-- Device FCC equipment id -->
         <Preference
@@ -120,9 +98,9 @@
                 android:title="@string/kernel_version"
                 android:summary="@string/summary_placeholder"/>
 
-        <!-- Build date -->
+        <!-- Build date
         <org.lineageos.internal.preference.deviceinfo.LineageBuildDatePreference
-                android:key="build_date" />
+                android:key="build_date" /> -->
 
         <!-- Detailed build version -->
         <Preference
