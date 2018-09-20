@@ -29,4 +29,8 @@
     <string name="venom_settings_title">Venom</string>
     <string name="venom_settings_summary">ROM features &amp; customization</string>
 
+    <!-- System theme -->
+    <string name="applying_theme_toast">Applying theme, please wait...</string>
+    <string name="theme_applied_toast">Theme applied!</string>
+
 </resources>
