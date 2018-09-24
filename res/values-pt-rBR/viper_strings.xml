@@ -29,4 +29,8 @@
     <string name="battery_image">Imagem da bateria</string>
     <string name="battery_image_description">Mostrar imagem da bateria na barra de status</string>
 
+    <!-- Battery stats reset -->
+    <string name="menu_stats_reset">Repor estatísticas</string>
+    <string name="reset_stats_msg">As estatísticas do histórico de baterias serão restauradas</string>
+
 </resources>
