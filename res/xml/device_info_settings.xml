@@ -19,7 +19,7 @@
         android:title="@string/about_settings">
 
         <!-- ViperOS Banner -->
-        <PreferenceScreen android:key="toxyc_header"
+        <PreferenceScreen android:key="viper_header"
                           android:enabled="false"
                           android:layout="@layout/about_viper_header" />
 
@@ -34,6 +34,13 @@
                     android:targetPackage="@string/additional_system_update"
                     android:targetClass="@string/additional_system_update_menu" />
         </Preference>
+
+         <!-- ViperOTA -->
+         <PreferenceScreen
+             android:key="viper_update"
+             android:title="@string/viper_update_settings_title"
+             android:summary="@string/viper_update_settings_summary"
+             android:fragment="com.viper.settings.fragments.about.Update" />
 
         <!-- LineageOS updates
         <org.lineageos.internal.preference.deviceinfo.LineageUpdatesPreference

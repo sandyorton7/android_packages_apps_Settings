@@ -1,0 +1,4 @@
+
+<WakefulIntentService
+    listener="com.viper.settings.fragments.about.update.scheduler.OTAListener"
+    />

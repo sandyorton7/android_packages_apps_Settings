@@ -34,4 +34,8 @@
     <string name="reset_stats_msg">Battery history stats are going to be reset</string>
     <string name="ok_string">Ok</string>
 
+    <!-- OTA -->
+    <string name="viper_update_settings_title">ViperOS updates</string>
+    <string name="viper_update_settings_summary">Find new updates</string>
+
 </resources>

@@ -134,6 +134,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.viper.venom.VenomSettings;
 import com.viper.venom.fragments.PowerMenuSettings;
+import com.viper.settings.fragments.about.Update;
 
 public class SettingsGateway {
 
@@ -258,6 +259,7 @@ public class SettingsGateway {
             DataUsageList.class.getName(),
             VenomSettings.class.getName(),
             PowerMenuSettings.class.getName(),
+            Update.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

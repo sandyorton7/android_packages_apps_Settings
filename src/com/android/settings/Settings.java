@@ -192,5 +192,6 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class VenomActivity extends SettingsActivity {}
     public static class GlobalActionsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ViperOTASettingsActivity extends SettingsActivity { /* empty */ }
 
 }

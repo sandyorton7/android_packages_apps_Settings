@@ -6,6 +6,7 @@
 
 -keep class com.viper.venom.**
 -keep class com.viper.venom.navigation**
+-keep class com.viper.settings.**
 
 # We want to keep methods in Activity that could be used in the XML attribute onClick.
 -keepclassmembers class * extends android.app.Activity {

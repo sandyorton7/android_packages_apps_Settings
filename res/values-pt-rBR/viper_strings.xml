@@ -33,4 +33,8 @@
     <string name="menu_stats_reset">Repor estatísticas</string>
     <string name="reset_stats_msg">As estatísticas do histórico de baterias serão restauradas</string>
 
+    <!-- OTA -->
+    <string name="viper_update_settings_title">Atualizações da ViperOS</string>
+    <string name="viper_update_settings_summary">Encontre novas atualizações</string>
+
 </resources>
