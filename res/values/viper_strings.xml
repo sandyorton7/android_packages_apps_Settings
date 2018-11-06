@@ -55,5 +55,6 @@
     <string name="qs_tile_style_rounded_square">Rounded square</string>
     <string name="qs_tile_style_squircle">Squircle</string>
     <string name="qs_tile_style_tear_drop">Tear drop</string>
+    <string name="qs_styles_dialog_title">Select a QS tile style</string>
 
 </resources>
