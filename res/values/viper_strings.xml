@@ -47,6 +47,9 @@
     <string name="theme_applied_toast">Theme applied!</string>
     <string name="systemui_theme_black">Black</string>
     <string name="systemui_theme_bluenight">BlueNight</string>
+    <string name="theme_picker_dialog_title">Select an theme color</string>
+    <string name="theme_picker_summary">Select system theme</string>
+    <string name="theme_picker_auto">Automatic</string>
 
     <!-- QS tile styles -->
     <string name="qs_tile_style_title">QS tile style</string>
