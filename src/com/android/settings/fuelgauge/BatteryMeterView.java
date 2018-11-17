@@ -115,12 +115,14 @@ public class BatteryMeterView extends ImageView {
                                       R.dimen.battery_meter_height);
                     setShowPercent(false);
                     break;
+                case BatteryMeterDrawableBase.BATTERY_STYLE_CIRCLE:
                 case BatteryMeterDrawableBase.BATTERY_STYLE_BIG_CIRCLE:
                     mIntrinsicWidth = mContext.getResources().getDimensionPixelSize(
                                       R.dimen.battery_meter_height);
                     mIntrinsicHeight = mContext.getResources().getDimensionPixelSize(
                                       R.dimen.battery_meter_height);
                     break;
+                case BatteryMeterDrawableBase.BATTERY_STYLE_DOTTED_CIRCLE:
                 case BatteryMeterDrawableBase.BATTERY_STYLE_BIG_DOTTED_CIRCLE:
                     mIntrinsicWidth = mContext.getResources().getDimensionPixelSize(
                                       R.dimen.battery_meter_height);
