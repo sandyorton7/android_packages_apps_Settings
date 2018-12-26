@@ -503,7 +503,7 @@
     <style name="device_info_dialog_value">
         <item name="android:textAlignment">viewStart</item>
         <item name="android:textAppearance">@android:style/TextAppearance.Material.Body2</item>
-        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingBottom">10dp</item>
     </style>
 
 </resources>

@@ -23,15 +23,16 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/sim_content_padding">
+        android:padding="10dip">
 
-    	<ImageView
-    	   android:gravity="center"
-    	   android:layout_width="match_parent"
-    	   android:layout_height="100dp"
-    	   android:src="@drawable/ic_viper_logo"
-    	   android:adjustViewBounds="true"
-    	   android:scaleType="centerInside" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:paddingBottom="10dip"
+            android:src="@drawable/ic_viper_logo" />
 
         <TextView
             style="@style/device_info_dialog_label"
