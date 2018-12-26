@@ -24,8 +24,36 @@
     <string name="build_date">Data de construção</string>
     <string name="keywords_build_date">Data de construção, Informação da construção</string>
 
-  <!-- Venom Settings -->
-  <string name="venom_settings_title">Venom</string>
-  <string name="venom_settings_summary">Personalizar o dispositivo</string>
+    <!-- Venom Settings -->
+    <string name="venom_settings_title">Venom</string>
+    <string name="venom_settings_summary">Personalizar o dispositivo</string>
+
+    <!-- Themes -->
+    <string name="theme_category_title">Opções de temas</string>
+    <string name="disable_themes_installed_title">Os temas do sistema não estão disponíveis para evitar conflitos com o Substratum. Desinstalá-lo se você quiser usar esses temas.</string>
+    <string name="disable_accents_installed_title">O selecionador de accents não está disponível para evitar conflitos com o Substratum. Desinstalá-lo se você quiser usar o selecionador de accents.</string>
+    <string name="accent_picker_dialog_title">Selecionar uma cor de accent</string>
+    <string name="theme_accent_picker_title">Cor de accent</string>
+    <string name="theme_accent_picker_summary">Selecione a cor de accent para tema do sistema</string>
+    <string name="theme_accent_picker_default">Padrão</string>
+    <string name="accent_picker_material_colors">Cores material</string>
+    <string name="accent_picker_custom_colors">Pedidos de usuários</string>
+    <string name="applying_theme_toast">Aplicando tema, por favor aguarde...</string>
+    <string name="theme_applied_toast">Tema aplicado!</string>
+    <string name="systemui_theme_black">Preto</string>
+    <string name="systemui_theme_bluenight">Noite Azul</string>
+    <string name="theme_picker_dialog_title">Selecione uma cor de tema</string>
+    <string name="theme_picker_summary">Selecionar tema do sistema</string>
+    <string name="theme_picker_auto">Automático</string>
+
+    <!-- QS tile styles -->
+    <string name="qs_tile_style_title">Estilo das tiles do QS</string>
+    <string name="qs_tile_style_default">Padrão</string>
+    <string name="qs_tile_style_square">Quadrado</string>
+    <string name="qs_tile_style_rounded_square">Quadrado arredondado</string>
+    <string name="qs_tile_style_squircle">Círculo enquadrado</string>
+    <string name="qs_tile_style_tear_drop">Gota dágua</string>
+    <string name="qs_tile_style_double_circle">Duplo círculo</string>
+    <string name="qs_styles_dialog_title">Selecionar um estilo para QS</string>
 
 </resources>
