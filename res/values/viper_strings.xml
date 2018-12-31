@@ -69,4 +69,10 @@
     <string name="audio_panel_view_voice_title">Voice</string>
     <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
 
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
 </resources>
