@@ -96,4 +96,8 @@
     <string name="battery_stats_message">As estatísticas do histórico de baterias serão resetadas</string>
     <string name="ok_string">Ok</string>
 
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Temperatura da bateria</string>
+    <string name="battery_temp_summary">Toque para mudar de escala</string>
+
 </resources>
