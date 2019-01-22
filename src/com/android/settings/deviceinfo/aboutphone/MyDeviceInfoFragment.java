@@ -49,6 +49,7 @@ import com.android.settings.deviceinfo.SafetyInfoPreferenceController;
 import com.android.settings.deviceinfo.SELinuxStatusPreferenceController;
 import com.android.settings.deviceinfo.WifiMacAddressPreferenceController;
 import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController;
+import com.android.settings.deviceinfo.viper.ViperInfoPreferenceController;
 import com.android.settings.deviceinfo.BuildDatePreferenceController;
 import com.android.settings.deviceinfo.ViperVersionPreferenceController;
 import com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController;
@@ -133,6 +134,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
         controllers.add(new FeedbackPreferenceController(fragment, context));
         controllers.add(new FccEquipmentIdPreferenceController(context));
         controllers.add(new SELinuxStatusPreferenceController(context));
+        controllers.add(new ViperInfoPreferenceController(context, fragment));
         controllers.add(
                 new BuildNumberPreferenceController(context, activity, fragment, lifecycle));
         return controllers;

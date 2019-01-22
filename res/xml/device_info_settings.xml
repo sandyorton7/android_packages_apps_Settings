@@ -61,12 +61,12 @@
         android:summary="@string/summary_placeholder"/>
 
     <!-- ViperOS version --> 
-    <Preference 
+<!--    <Preference 
         android:key="viper_version"
         android:order="32"
         android:title="@string/viper_version"
         settings:keywords="@string/keywords_viper_version"
-        android:summary="@string/viper_version_default"/>
+        android:summary="@string/viper_version_default"/>-->
 
     <!-- Build date -->
     <Preference 

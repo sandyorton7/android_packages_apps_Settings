@@ -25,15 +25,6 @@
         android:layout_height="match_parent"
         android:padding="10dip">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:adjustViewBounds="true"
-            android:gravity="center"
-            android:scaleType="centerInside"
-            android:paddingBottom="10dip"
-            android:src="@drawable/ic_viper_logo" />
-
         <TextView
             style="@style/device_info_dialog_label"
             android:id="@+id/firmware_version_label"
@@ -65,18 +56,6 @@
             style="@style/device_info_dialog_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>-->
-
-        <TextView
-            style="@style/device_info_dialog_label"
-            android:id="@+id/viper_version_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/viper_version"/>
-        <TextView
-            style="@style/device_info_dialog_value"
-            android:id="@+id/viper_version_value"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
 
         <TextView
             style="@style/device_info_dialog_label"
@@ -126,7 +105,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <TextView
+        <!--<TextView
             style="@style/device_info_dialog_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -134,7 +113,7 @@
         <org.lineageos.internal.preference.deviceinfo.LineageBuildDateTextView
             style="@style/device_info_dialog_value"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"/>-->
 
         <TextView
             style="@style/device_info_dialog_label"

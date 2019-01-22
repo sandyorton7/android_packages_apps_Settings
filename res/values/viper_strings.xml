@@ -16,8 +16,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, ViperOS version -->
-    <string name="viper_version">ViperOS version</string>
-    <string name="viper_version_default">Unknown</string>
     <string name="keywords_viper_version">ViperOS version</string>
 
     <!-- About phone screen, build date -->
@@ -74,5 +72,14 @@
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- ViperOS info -->
+    <string name="viper_title">ViperOS</string>
+    <string name="viper_info">ViperOS version</string>
+    <string name="viper_maintainer">Maintainer</string>
+    <string name="viper_date">Build date</string>
+    <string name="viper_type">Build type</string>
+    <string name="viper_device">Device</string>
+    <string name="viper_version">Version</string>
 
 </resources>
