@@ -24,54 +24,66 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_columnWeight="1"
+        android:layout_marginRight="2dp"
         android:gravity="center"
         android:layout_gravity="fill_horizontal"
-        android:background="#900000" />
+        android:background="@drawable/ic_circletheme"
+        android:backgroundTint="#900000" />
 
     <Button
         android:id="@+id/userAccentTwo"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_columnWeight="1"
+        android:layout_marginRight="2dp"
         android:gravity="center"
         android:layout_gravity="fill_horizontal"
-        android:background="#42069a" />
+        android:background="@drawable/ic_circletheme"
+        android:backgroundTint="#42069a" />
 
     <Button
         android:id="@+id/userAccentThree"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_columnWeight="1"
+        android:layout_marginRight="2dp"
         android:gravity="center"
         android:layout_gravity="fill_horizontal"
-        android:background="#1976D2" />
+        android:background="@drawable/ic_circletheme"
+        android:backgroundTint="#1976D2" />
 
     <Button
         android:id="@+id/userAccentFour"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_columnWeight="1"
+        android:layout_marginRight="2dp"
         android:gravity="center"
         android:layout_gravity="fill_horizontal"
-        android:background="#42f4aa" />
+        android:background="@drawable/ic_circletheme"
+        android:backgroundTint="#42f4aa" />
 
     <Button
         android:id="@+id/userAccentFive"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_columnWeight="1"
+        android:layout_marginRight="2dp"
         android:gravity="center"
         android:layout_gravity="fill_horizontal"
-        android:background="#0EE898" />
+        android:background="@drawable/ic_circletheme"
+        android:backgroundTint="#0EE898" />
 
     <Button
         android:id="@+id/userAccentSix"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_columnWeight="1"
+        android:layout_marginRight="2dp"
         android:gravity="center"
         android:layout_gravity="fill_horizontal"
-        android:background="#FFC27B" />
+        android:background="@drawable/ic_circletheme"
+        android:backgroundTint="#FFC27B" />
 
     <Button
         android:id="@+id/userAccentSeven"
@@ -80,6 +92,7 @@
         android:layout_columnWeight="1"
         android:gravity="center"
         android:layout_gravity="fill_horizontal"
-        android:background="#FFCC00" />
+        android:background="@drawable/ic_circletheme"
+        android:backgroundTint="#FFCC00" />
 
 </LinearLayout>
