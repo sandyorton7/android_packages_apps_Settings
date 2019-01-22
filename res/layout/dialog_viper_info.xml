@@ -12,30 +12,35 @@
   limitations under the License.
   -->
 
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="right"
+        android:layout_marginRight="24dp"
+        android:selectable="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_viper_logo"/>
+    </RelativeLayout>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="24dp">
-
-        <LinearLayout
-    	    android:gravity="center"
-    	    android:layout_width="match_parent"
-    	    android:layout_height="wrap_content"
-            android:selectable="false">
-
-            <ImageView
-    	        android:layout_width="wrap_content"
-    	        android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-    	        android:src="@drawable/ic_viper_logo"
-    	        android:adjustViewBounds="true"
-    	        android:scaleType="centerInside" />
-        </LinearLayout>
 
         <TextView
             style="@style/device_info_dialog_label"
@@ -98,4 +103,5 @@
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</RelativeLayout>
