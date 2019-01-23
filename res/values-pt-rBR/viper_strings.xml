@@ -85,4 +85,10 @@
     <string name="viper_version">Versão</string>
 
 
+    <!-- Device Introduction -->
+    <string name="first_time_introduction_header">Bem vindo(a) á ViperOS!</string>
+    <string name="first_time_introduction_message">Experimente o Android como nunca antes: excelente duração da bateria, sensação suave e amanteigada e um conjunto extra de recursos personalizados. Você pode personalizar a barra de status, configurações rápidas, barra de navegação, tela de bloqueio, recentes, notificações e até mesmo as animações. A maioria dos recursos está presente nos respectivos painéis. Aqui estão algumas coisas que você pode fazer
+     para começar:\n\n- Configuração Deslize o dedo para cima no botão Início\n- Brinque com nossas opções de temas incorporadas. Você pode escolher a cor de fundo entre Claro, Escuro, Preto e também há várias cores de destaque disponíveis</string>
+    <string name="first_time_confirm_button">ENTENDI</string>
+
 </resources>
