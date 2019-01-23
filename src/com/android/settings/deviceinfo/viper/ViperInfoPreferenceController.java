@@ -32,7 +32,7 @@ public class ViperInfoPreferenceController extends AbstractPreferenceController 
         PreferenceControllerMixin {
 
     private final static String VIPER_INFO_KEY = "viper_info";
-    private static final String VIPER_VERSION = "ro.modversion";
+    private static final String VIPER_VERSION = "ro.vipermodversion";
 
     private final Fragment mFragment;
 
