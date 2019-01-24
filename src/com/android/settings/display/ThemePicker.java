@@ -90,6 +90,9 @@ public class ThemePicker extends InstrumentedDialogFragment implements OnClickLi
         Button userThemeFour = mView.findViewById(R.id.userThemeFour);
         setTheme("4", userThemeFour);
 
+        Button userThemeFive = mView.findViewById(R.id.userThemeFive);
+        setTheme("5", userThemeFive);
+
     }
 
     @Override
