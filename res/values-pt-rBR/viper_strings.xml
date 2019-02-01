@@ -91,4 +91,9 @@
      para começar:\n\n- Configuração Deslize o dedo para cima no botão Início\n- Brinque com nossas opções de temas incorporadas. Você pode escolher a cor de fundo entre Claro, Escuro, Preto e também há várias cores de destaque disponíveis</string>
     <string name="first_time_confirm_button">ENTENDI</string>
 
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Resetar stats</string>
+    <string name="battery_stats_message">As estatísticas do histórico de baterias serão resetadas</string>
+    <string name="ok_string">Ok</string>
+
 </resources>
