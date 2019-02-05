@@ -37,6 +37,7 @@
     <string name="theme_accent_picker_default">Default</string>
     <string name="accent_picker_material_colors">Material palette</string>
     <string name="accent_picker_custom_colors">User requested</string>
+    <string name="accent_picker_nougat_colors">ViperOS nougat colors</string>
     <string name="applying_theme_toast">Applying theme, please wait...</string>
     <string name="theme_applied_toast">Theme applied!</string>
     <string name="systemui_theme_black">Black</string>
