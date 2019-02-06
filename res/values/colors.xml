@@ -126,6 +126,7 @@
     <color name="homepage_support_background">?android:attr/colorAccent</color>
     <color name="homepage_generic_icon_background">?android:attr/colorAccent</color>
     <color name="homepage_venom_background">?android:attr/colorAccent</color>
+    <color name="homepage_about_background">?android:attr/colorAccent</color>
     <!-- End of dashboard/homepage icon background colors -->
 
     <color name="glif_error_color">@*android:color/material_red_A700</color>
